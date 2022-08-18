@@ -6,10 +6,12 @@ int h = 640;
 ArrayList<Particle> particles;
 
 // forces
-PVector wind = new PVector(-0.5,0); 
+PVector wind = new PVector(-0.15,0); 
 PVector gravity = new PVector(0,0.1);
 PVector extForce = new PVector(0,0);
-boolean extForceApplied = false;
+
+// extra helpful
+int[] buttons = {87, 83, 65, 68};
 
 void settings(){
   size(w,h);
@@ -17,6 +19,7 @@ void settings(){
 
 void setup(){
   particles = new ArrayList<Particle>();  
+  background(0);
 }
 
 void mousePressed(){
@@ -32,66 +35,67 @@ void mouseDragged(){
 }
 
 void keyPressed(){
-  extForceApplied = false;
+  //extForceApplied = false; 
+  //extForce.mult(0);
   
-  float controlAmount = 1000;
+  float controlAmount = 0.05;
   float amountX = 0, amountY = 0;
   
-  if(keyCode == 'w'){
+  if(keyCode == buttons[0]){
     amountX = 0;
     amountY = -controlAmount;
-    extForceApplied = true;
   }
-  else if(keyCode == 's'){
+  else if(keyCode == buttons[1]){
     amountX = 0;
     amountY = controlAmount;
-    extForceApplied = true;
   }
-  else if (keyCode == 'a'){
+  else if (keyCode == buttons[2]){
     amountX = -controlAmount;
     amountY = 0;  
-    extForceApplied = true;
   }
-  else if(keyCode == 's'){
+  else if(keyCode == buttons[3]){
     amountX = controlAmount;
     amountY = 0;
-    extForceApplied = true;
+  }
+  
+  else if (keyCode == 67){ 
+    extForce.mult(0); // clears force when 'c' is pressed
+    return;
   }
   
   // apply force to each particle
   PVector correctionForce = new PVector(amountX, amountY);  
-  extForce.add(correctionForce);  
- 
-  int sL = 300;
-  square(w - sL/2, h - sL/2, sL); // sL/2 is to centre the box better
-  stroke(100);
-  fill(200); 
+  extForce.add(correctionForce);
+    
+  // draw square at bottom of screen to indicate when external force is added
+  drawBottomSquare();
 }
 
-//void keyReleased(){
-//  if(keyCode == 'w' || keyCode == 's' || keyCode == 'a' || keyCode == 'd'){
-//      extForceApplied = false;
-//      extForce.mult(0);
-//  }
-//}
+void keyReleased(){
+  if(keyCode == buttons[0] || keyCode == buttons[1]){
+    extForce.y = 0;
+  }
+  else if(keyCode == buttons[2] || keyCode == buttons[3]){
+    extForce.x = 0;
+  } 
+}
 
 void draw(){
   background(0);
-   
-  // this does not work for some reason
-  if(extForceApplied) {
-    int sL = 100;
-    square(w - sL/2, h - sL/2, sL); // sL/2 is to centre the box better
-    stroke(100);
-    fill(200); 
-  }
   
   for(Particle p : particles){
-    //p.addForce(wind);
+    p.addForce(wind);
     p.addForce(gravity);
-    //p.addForce(extForce);
+    p.addForce(extForce);
     p.update();
     p.display();
     p.controlParticleColour();
   }
+}
+
+void drawBottomSquare(){
+  int sL = 300;
+  square(w - sL/2, h - sL/2, sL); // sL/2 is to centre the box better
+  stroke(100);
+  //fill(200);
 }

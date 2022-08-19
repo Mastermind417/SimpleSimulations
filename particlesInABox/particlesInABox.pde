@@ -1,7 +1,8 @@
 // Created 18th August 2022
 
-int w = 640;
-int h = 640; 
+final int w = 1000;
+final int h = 1000; 
+final int backgroundColour = 0; // 0 black, 255 white
 
 ArrayList<Particle> particles;
 
@@ -13,13 +14,26 @@ PVector extForce = new PVector(0,0);
 // extra helpful
 int[] buttons = {87, 83, 65, 68};
 
+// images for external user control
+PImage photoUp;
+PImage photoDown;
+PImage photoLeft;
+PImage photoRight;
+int picCounter = 0; //{0,1,2,3,4} -> {No pic, Up, Down, Left, Right};
+
 void settings(){
   size(w,h);
 }
 
 void setup(){
   particles = new ArrayList<Particle>();  
-  background(0);
+  background(backgroundColour);
+  
+  // load pictures
+  photoUp = loadImage("DirectionPics/up.png");
+  photoDown = loadImage("DirectionPics/down.png");
+  photoLeft = loadImage("DirectionPics/left.png");
+  photoRight = loadImage("DirectionPics/right.png");
 }
 
 void mousePressed(){
@@ -35,27 +49,28 @@ void mouseDragged(){
 }
 
 void keyPressed(){
-  //extForceApplied = false; 
-  //extForce.mult(0);
-  
   float controlAmount = 0.05;
   float amountX = 0, amountY = 0;
   
   if(keyCode == buttons[0]){
     amountX = 0;
     amountY = -controlAmount;
+    picCounter = 1;
   }
   else if(keyCode == buttons[1]){
     amountX = 0;
     amountY = controlAmount;
+    picCounter = 2;
   }
   else if (keyCode == buttons[2]){
     amountX = -controlAmount;
     amountY = 0;  
+    picCounter = 3;
   }
   else if(keyCode == buttons[3]){
     amountX = controlAmount;
     amountY = 0;
+    picCounter = 4;
   }
   
   else if (keyCode == 67){ 
@@ -63,26 +78,33 @@ void keyPressed(){
     return;
   }
   
+  // make image transparent
+  makeImgTransparent();
+  
   // apply force to each particle
   PVector correctionForce = new PVector(amountX, amountY);  
   extForce.add(correctionForce);
     
   // draw square at bottom of screen to indicate when external force is added
-  drawBottomSquare();
+  //drawBottomSquare();
 }
 
 void keyReleased(){
   if(keyCode == buttons[0] || keyCode == buttons[1]){
     extForce.y = 0;
+    picCounter = 0;
   }
   else if(keyCode == buttons[2] || keyCode == buttons[3]){
     extForce.x = 0;
-  } 
+    picCounter = 0;
+  }
 }
 
 void draw(){
-  background(0);
-  
+  background(backgroundColour);
+  drawAppropriatePicture();
+   
+  // particle manipulation
   for(Particle p : particles){
     p.addForce(wind);
     p.addForce(gravity);
@@ -91,11 +113,4 @@ void draw(){
     p.display();
     p.controlParticleColour();
   }
-}
-
-void drawBottomSquare(){
-  int sL = 300;
-  square(w - sL/2, h - sL/2, sL); // sL/2 is to centre the box better
-  stroke(100);
-  //fill(200);
 }

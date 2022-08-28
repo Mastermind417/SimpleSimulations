@@ -26,7 +26,7 @@ void settings(){
 }
 
 void setup(){
-  //frameRate(15);
+  //frameRate(1);
   
   particles = new ArrayList<Particle>();  
   background(backgroundColour);
@@ -39,14 +39,14 @@ void setup(){
 }
 
 void mousePressed(){
-  Particle p = new Particle(mouseX, mouseY, 0,0, w, h);
+  Particle p = new Particle(mouseX, mouseY, 0,0, w, h, "Particle" + particles.size());
   particles.add(p);
 }
 
 void mouseDragged(){
   float vx = mouseX - pmouseX;
   float vy = mouseY - pmouseY;
-  Particle p = new Particle(mouseX, mouseY, vx, vy, w, h);
+  Particle p = new Particle(mouseX, mouseY, vx, vy, w, h, "Particle" + particles.size());
   particles.add(p);
 }
 
@@ -113,6 +113,7 @@ void draw(){
     p.addForce(extForce);
     p.update();
     p.display();
+    //print(p.name + " at position " + p.position + "\n");
     p.controlParticleColour();
   }
   
@@ -123,16 +124,22 @@ void draw(){
   }
   
   // resolve collision
-  for(int i = 0; i<particles.size(); i++){
-    Particle currentParticle = particles.get(i);
-    for(int j = i; j<particles.size(); j++){
-      Particle otherParticle = particles.get(j);
-      currentParticle.collideWithOtherParticle(otherParticle);
-      //currentParticle.update();
-      //currentParticle.display();
+  //for(int i = 0; i<particles.size()-1; i++){ // i goes from 0 to n-2 {[0, 1, 2, .. , n-2], n-1}
+  //Particle currentParticle = particles.get(i);
+  //  for(int j = i+1; j<=particles.size()-1; j++){ // je goes from i+1 to n-1 {0,1,2, ..., i, [i+1, ..., n-2, n-1]}
+  //    Particle otherParticle = particles.get(j);
+  //    currentParticle.collideWithParticle(otherParticle);
+  //  }
+  //}
+  
+  // resolve collision #2
+  for(Particle part1 : particles){
+    for(Particle part2 : particles){
+      part2.collideWithParticle(part1);
     }
-    //currentParticle.display();    
   }
+  
+  print("========\n");
   
   // show particle count
   showParticleCount();

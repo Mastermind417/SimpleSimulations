@@ -6,6 +6,7 @@ class Particle{
   int lifetime;
   final int MAXLIFETIME = 1000;
   boolean hasDied = false;
+  String name;
   
   int diameter = (int)random(40,80);
   float radius;
@@ -18,13 +19,14 @@ class Particle{
   PVector boundary;
   PVector maxVel;
   
-  Particle(float x, float y, float vx, float vy, float bx, float by){
+  Particle(float x, float y, float vx, float vy, float bx, float by, String name_){
     position = new PVector(x,y);
     velocity = new PVector(vx, vy);
     mass = 1;
     force = new PVector(0,0);
     boundary = new PVector(bx, by);
     maxVel = new PVector(0.001,0.001);
+    name = name_;
     
     lifetime = 0;
     radius = diameter/2;
@@ -45,7 +47,7 @@ class Particle{
     //velocity.x *= dampening;
     position.add(velocity);
     
-    // record maximum velocity#
+    // record maximum velocity
     recordMaxVel();
     
     // clear total force at the end
@@ -92,14 +94,21 @@ class Particle{
     }    
   }
   
-  void collideWithOtherParticle(Particle otherParticle){
+  void collideWithParticle(Particle otherParticle){
+    if(otherParticle.name == name) return;
+    
+    print("Hi " + name + "\n");
     
     PVector displacementDiff = position.sub(otherParticle.position);
     float maxDist = radius + otherParticle.radius;
     
+    //println("Checking " + name + " against " + otherParticle.name);
     // check if spheres overlap and reverse direction
-    if( abs(displacementDiff.x) <= maxDist && abs(displacementDiff.y) <= maxDist){
-      velocity.mult(-1);      
+    //println(name + " x,y: " + position.x + " " + position.y);
+    if( abs(displacementDiff.x) <= maxDist && abs(displacementDiff.y) <= maxDist ){
+      //println(name + " has collided with " + otherParticle.name);
+      //println("x: " + velocity.x + "y: " + velocity.y);
+      //velocity.mult(-1);      
     }
   }
   
@@ -121,11 +130,9 @@ class Particle{
   }
   
   void killParticle(){
-    if(lifetime == MAXLIFETIME){
-      // do something when lifetime 'expires'
-      // change particle radius. When set to 0 the particle is simply not shown
-      diameter = 0;
-      hasDied = true;
-    } 
+    if(lifetime < MAXLIFETIME) return;
+    
+    diameter = 0;
+    hasDied = true;
   }
 }

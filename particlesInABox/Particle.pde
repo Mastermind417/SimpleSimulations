@@ -5,7 +5,11 @@ class Particle{
   
   int lifetime;
   final int MAXLIFETIME = 1000;
-  int diameter = 40;
+  boolean hasDied = false;
+  
+  int diameter = (int)random(40,80);
+  float radius;
+  
   final float dampening = 0.999;
   
   PVector force;
@@ -21,7 +25,9 @@ class Particle{
     force = new PVector(0,0);
     boundary = new PVector(bx, by);
     maxVel = new PVector(0.001,0.001);
+    
     lifetime = 0;
+    radius = diameter/2;
   }
   
   void update(){
@@ -36,7 +42,7 @@ class Particle{
     
     // update kinematics
     velocity.add(acceleration);
-    velocity.x *= dampening;
+    //velocity.x *= dampening;
     position.add(velocity);
     
     // record maximum velocity#
@@ -78,13 +84,23 @@ class Particle{
   }
   
   void restrictToBox(){
-    float radius = diameter/2;
     if(position.x + radius > boundary.x || position.x - radius < 0){
       velocity.x *= -1; 
     }
     else if(position.y + radius > boundary.y || position.y - radius < 0){
       velocity.y *= -1; 
     }    
+  }
+  
+  void collideWithOtherParticle(Particle otherParticle){
+    
+    PVector displacementDiff = position.sub(otherParticle.position);
+    float maxDist = radius + otherParticle.radius;
+    
+    // check if spheres overlap and reverse direction
+    if( abs(displacementDiff.x) <= maxDist && abs(displacementDiff.y) <= maxDist){
+      velocity.mult(-1);      
+    }
   }
   
   void controlParticleColour(){ 
@@ -109,6 +125,7 @@ class Particle{
       // do something when lifetime 'expires'
       // change particle radius. When set to 0 the particle is simply not shown
       diameter = 0;
+      hasDied = true;
     } 
   }
 }

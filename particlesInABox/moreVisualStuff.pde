@@ -23,3 +23,13 @@ void drawBottomSquare(){
   stroke(100);
   //fill(200);
 }
+
+void showParticleCount(){
+  textSize(100);
+  
+  String countToShow = str(particles.size());
+  if (countToShow == "0") countToShow = "";
+  
+  text("Particle Count: " + countToShow, 0, h); 
+  fill(128, 128, 128);
+}

@@ -22,10 +22,12 @@ PImage photoRight;
 int picCounter = 0; //{0,1,2,3,4} -> {No pic, Up, Down, Left, Right};
 
 void settings(){
-  size(w,h);
+  size(w,h); 
 }
 
 void setup(){
+  //frameRate(15);
+  
   particles = new ArrayList<Particle>();  
   background(backgroundColour);
   
@@ -100,17 +102,38 @@ void keyReleased(){
   }
 }
 
-void draw(){
+void draw(){  
   background(backgroundColour);
   drawAppropriatePicture();
    
   // particle manipulation
   for(Particle p : particles){
-    p.addForce(wind);
-    p.addForce(gravity);
+    //p.addForce(wind);
+    //p.addForce(gravity);
     p.addForce(extForce);
     p.update();
     p.display();
     p.controlParticleColour();
   }
+  
+  // check if particles have 'died'
+  for (int i = particles.size() - 1; i >= 0; i--) {
+  Particle p = particles.get(i);
+  if ( p.hasDied ) particles.remove(i);
+  }
+  
+  // resolve collision
+  for(int i = 0; i<particles.size(); i++){
+    Particle currentParticle = particles.get(i);
+    for(int j = i; j<particles.size(); j++){
+      Particle otherParticle = particles.get(j);
+      currentParticle.collideWithOtherParticle(otherParticle);
+      //currentParticle.update();
+      //currentParticle.display();
+    }
+    //currentParticle.display();    
+  }
+  
+  // show particle count
+  showParticleCount();
 }

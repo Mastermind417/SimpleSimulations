@@ -21,11 +21,15 @@ PImage photoLeft;
 PImage photoRight;
 int picCounter = 0; //{0,1,2,3,4} -> {No pic, Up, Down, Left, Right};
 
+PrintWriter logger;
+int time = 0;
+
 void settings(){
   size(w,h); 
 }
 
 void setup(){
+  logger = createWriter("logger.txt");
   //frameRate(1);
   
   particles = new ArrayList<Particle>();  
@@ -113,7 +117,6 @@ void draw(){
     p.addForce(extForce);
     p.update();
     p.display();
-    //print(p.name + " at position " + p.position + "\n");
     p.controlParticleColour();
   }
   
@@ -123,23 +126,26 @@ void draw(){
   if ( p.hasDied ) particles.remove(i);
   }
   
-  // resolve collision
-  //for(int i = 0; i<particles.size()-1; i++){ // i goes from 0 to n-2 {[0, 1, 2, .. , n-2], n-1}
-  //Particle currentParticle = particles.get(i);
-  //  for(int j = i+1; j<=particles.size()-1; j++){ // je goes from i+1 to n-1 {0,1,2, ..., i, [i+1, ..., n-2, n-1]}
-  //    Particle otherParticle = particles.get(j);
-  //    currentParticle.collideWithParticle(otherParticle);
-  //  }
-  //}
-  
-  // resolve collision #2
-  for(Particle part1 : particles){
-    for(Particle part2 : particles){
-      part2.collideWithParticle(part1);
+  logger.println("Time: " + ++time);
+  // find particles
+  for(int i = particles.size()-1; i>=0; i--){ 
+  Particle currentParticle = particles.get(i);
+    for(int j = i-1; j>=0; j--){
+      Particle otherParticle = particles.get(j);
+      
+      // resolve contact
+      currentParticle.collideWithParticle(otherParticle);
+      otherParticle.collideWithParticle(currentParticle);
     }
+    logger.println(currentParticle.name + ": " + currentParticle.position + " | " + currentParticle.velocity);
   }
   
-  print("========\n");
+  // resolve collision #2
+  //for(Particle part1 : particles){
+  //  for(Particle part2 : particles){
+  //    part2.collideWithParticle(part1);
+  //  }
+  //}
   
   // show particle count
   showParticleCount();

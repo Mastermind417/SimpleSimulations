@@ -96,20 +96,52 @@ class Particle{
   
   void collideWithParticle(Particle otherParticle){
     if(otherParticle.name == name) return;
-    
-    print("Hi " + name + "\n");
-    
+        
     PVector displacementDiff = position.sub(otherParticle.position);
     float maxDist = radius + otherParticle.radius;
     
-    //println("Checking " + name + " against " + otherParticle.name);
-    // check if spheres overlap and reverse direction
-    //println(name + " x,y: " + position.x + " " + position.y);
+    // check if spheres overlap and resolve contact
     if( abs(displacementDiff.x) <= maxDist && abs(displacementDiff.y) <= maxDist ){
-      //println(name + " has collided with " + otherParticle.name);
-      //println("x: " + velocity.x + "y: " + velocity.y);
-      //velocity.mult(-1);      
+      logger.println(name + " has collided with " + otherParticle.name);      
+      //resolveContact(otherParticle);
     }
+  }
+  
+  void resolveContact(Particle otherParticle){
+    // this is taking into account an elastic collision of a classical two particle system
+    float m2 = mass;
+    float m1 = otherParticle.mass;
+    PVector u1 = otherParticle.velocity;
+    PVector u2 = velocity;
+    
+    // The quadratic equation is m2/m1 * (m1+m2) * v2^2 - 2*m2*(u1+m2u2)* v2 + m2*u2((m2/m1-1)*u2 + 2*u1)
+    // coefficient of v2^2
+    float a = m2/m1 * (m1 + m2);
+    
+    // coefficient of v2
+    PVector B = u1;
+    B.add(u2.mult(m2));
+    B.mult(2*m2);
+    
+    // coefficient of v2^0
+    PVector cPar1 = u2.mult(m2);
+    PVector cPar2 = u1.mult(2);
+    cPar2.add(u2.mult(m2/m1 -1));
+    float c = cPar1.dot(cPar2);
+
+    // find correct v2
+    float discri = sqrt(B.dot(B) - 4*a*c);
+    PVector v2 = B;
+    v2.add(discri,discri);
+    v2.div(2*a);    
+    if (v2.mag() > u2.mag()) {
+      v2 = B;
+      v2.sub(discri,discri);
+      v2.div(2*a);
+    }; 
+    
+    // assign new velocity to current velocity
+    velocity = v2;   
   }
   
   void controlParticleColour(){ 

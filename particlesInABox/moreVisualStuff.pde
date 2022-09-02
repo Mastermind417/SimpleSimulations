@@ -33,3 +33,12 @@ void showParticleCount(){
   text("Particle Count: " + countToShow, 0, h); 
   fill(128, 128, 128);
 }
+
+void showTime(int time){
+  textSize(50);
+  
+  String timeToShow = str(time);
+  
+  text("Time: " + timeToShow, 0, 40); 
+  fill(128, 128, 128);
+}

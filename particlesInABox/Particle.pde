@@ -4,7 +4,6 @@ class Particle{
   PVector acceleration;
   
   int lifetime;
-  final int MAXLIFETIME = 1000;
   boolean hasDied = false;
   String name;
   
@@ -28,7 +27,7 @@ class Particle{
     maxVel = new PVector(0.001,0.001);
     name = name_;
     
-    lifetime = 0;
+    lifetime = 1000;
     radius = diameter/2;
   }
   
@@ -53,7 +52,7 @@ class Particle{
     // clear total force at the end
     force.mult(0);
     
-    lifetime += 1;
+    lifetime -= 1;
     killParticle();
   }
   
@@ -95,15 +94,22 @@ class Particle{
   }
   
   void collideWithParticle(Particle otherParticle){
-    if(otherParticle.name == name) return;
-        
-    PVector displacementDiff = position.sub(otherParticle.position);
-    float maxDist = radius + otherParticle.radius;
+    PVector otherPos = otherParticle.position;
+    String otherN = otherParticle.name;
+    float otherR = otherParticle.radius;
+    
+    boolean sameParticle = name == otherN;
+    if(sameParticle) return; //<>//
+    
+    PVector displacementDiff = new PVector();
+    PVector.sub(position, otherPos, displacementDiff);
+    
+    float maxDist = radius + otherR; //<>//
     
     // check if spheres overlap and resolve contact
     if( abs(displacementDiff.x) <= maxDist && abs(displacementDiff.y) <= maxDist ){
-      logger.println(name + " has collided with " + otherParticle.name);      
-      //resolveContact(otherParticle);
+      logger.println("t = " + time);
+      resolveContact(otherParticle);
     }
   }
   
@@ -129,11 +135,12 @@ class Particle{
     cPar2.add(u2.mult(m2/m1 -1));
     float c = cPar1.dot(cPar2);
 
+    
     // find correct v2
     float discri = sqrt(B.dot(B) - 4*a*c);
     PVector v2 = B;
     v2.add(discri,discri);
-    v2.div(2*a);    
+    v2.div(2*a);
     if (v2.mag() > u2.mag()) {
       v2 = B;
       v2.sub(discri,discri);
@@ -141,7 +148,7 @@ class Particle{
     }; 
     
     // assign new velocity to current velocity
-    velocity = v2;   
+    velocity = v2;
   }
   
   void controlParticleColour(){ 
@@ -162,7 +169,7 @@ class Particle{
   }
   
   void killParticle(){
-    if(lifetime < MAXLIFETIME) return;
+    if(lifetime > 0) return;
     
     diameter = 0;
     hasDied = true;

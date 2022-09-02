@@ -1,1511 +1,1025 @@
-Time: 1
-Time: 2
-Time: 3
-Time: 4
-Time: 5
-Time: 6
-Time: 7
-Time: 8
-Time: 9
-Time: 10
-Time: 11
-Time: 12
-Time: 13
-Time: 14
-Time: 15
-Time: 16
-Time: 17
-Time: 18
-Time: 19
-Time: 20
-Time: 21
-Time: 22
-Time: 23
-Time: 24
-Time: 25
-Time: 26
-Time: 27
-Time: 28
-Time: 29
-Time: 30
-Time: 31
-Time: 32
-Time: 33
-Time: 34
-Time: 35
-Time: 36
-Time: 37
-Time: 38
-Time: 39
-Time: 40
-Time: 41
-Time: 42
-Time: 43
-Time: 44
-Time: 45
-Time: 46
-Time: 47
-Time: 48
-Time: 49
-Time: 50
-Time: 51
-Time: 52
-Time: 53
-Time: 54
-Time: 55
-Time: 56
-Time: 57
-Time: 58
-Time: 59
-Time: 60
-Time: 61
-Time: 62
-Time: 63
-Time: 64
-Time: 65
-Time: 66
-Time: 67
-Time: 68
-Time: 69
-Time: 70
-Time: 71
-Time: 72
-Time: 73
-Time: 74
-Time: 75
-Time: 76
-Time: 77
-Time: 78
-Time: 79
-Time: 80
-Time: 81
-Time: 82
-Time: 83
-Time: 84
-Time: 85
-Time: 86
-Time: 87
-Time: 88
-Time: 89
-Time: 90
-Time: 91
-Time: 92
-Time: 93
-Time: 94
-Time: 95
-Time: 96
-Time: 97
-Time: 98
-Time: 99
-Time: 100
-Time: 101
-Time: 102
-Time: 103
-Time: 104
-Time: 105
-Time: 106
-Time: 107
-Time: 108
-Time: 109
-Time: 110
-Time: 111
-Time: 112
-Time: 113
-Time: 114
-Time: 115
-Time: 116
-Time: 117
-Time: 118
-Time: 119
-Time: 120
-Time: 121
-Time: 122
-Time: 123
-Time: 124
-Time: 125
-Time: 126
-Time: 127
-Time: 128
-Time: 129
-Time: 130
-Time: 131
-Time: 132
-Time: 133
-Time: 134
-Time: 135
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 136
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 137
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 138
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 139
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 140
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 141
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 142
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 143
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 144
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 145
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 146
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 147
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 148
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 149
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 150
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 151
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 152
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 153
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 154
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 155
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 156
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 157
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 158
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 159
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 160
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 161
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 162
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 163
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 164
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 165
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 166
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 167
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 168
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 169
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 170
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 171
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 172
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 173
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 174
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 175
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 176
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 177
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 178
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 179
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 180
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 181
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 182
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 183
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 184
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 185
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 186
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 187
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 188
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 189
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 190
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 191
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 192
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 193
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 194
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 195
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 196
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 197
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 198
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 199
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 200
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 201
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 202
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 203
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 204
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 205
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 206
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 207
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 208
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 209
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 210
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 211
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 212
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 213
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 214
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 215
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 216
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 217
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 218
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 219
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 220
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 221
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 222
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 223
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 224
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 225
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 226
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 227
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 228
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 229
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 230
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 231
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 232
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 233
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 234
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 235
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 236
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 237
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 238
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 239
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 240
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 241
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 242
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 243
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 244
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 245
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 246
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 247
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 248
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 249
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 250
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 251
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 252
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 253
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 254
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 255
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 256
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 257
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 258
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 259
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 260
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 261
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 262
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 263
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 264
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 265
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 266
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 267
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 268
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 269
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 270
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 271
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 272
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 273
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 274
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 275
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 276
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 277
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 278
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 279
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 280
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 281
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 282
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 283
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 284
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 285
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 286
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 287
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 288
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 289
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 290
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 291
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 292
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 293
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 294
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 295
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 296
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 297
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 298
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 299
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 300
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 301
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 302
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 303
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 304
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 305
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 306
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 307
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 308
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 309
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 310
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 311
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 312
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 313
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 314
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 315
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 316
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 317
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 318
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 319
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 320
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 321
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 322
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 323
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 324
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 325
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 326
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 327
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 328
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 329
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 330
-Particle0: [ 253.0, 238.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 331
-Particle0 has collided with Particle1
-Particle1: [ 287.0, 280.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -34.0, -42.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 332
-Particle1: [ 321.0, 322.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -355.0, -364.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 333
-Particle1: [ 676.0, 686.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1031.0, -1050.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 334
-Particle1: [ 1707.0, 1736.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2738.0, -2786.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 335
-Particle1: [ 4445.0, 4522.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -7183.0, -7308.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 336
-Particle1: [ 11628.0, 11830.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -18811.0, -19138.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 337
-Particle1: [ 30439.0, 30968.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -49250.0, -50106.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 338
-Particle1: [ 79689.0, 81074.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -128939.0, -131180.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 339
-Particle1: [ 208628.0, 212254.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -337567.0, -343434.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 340
-Particle1: [ 546195.0, 555688.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -883762.0, -899122.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 341
-Particle1: [ 1429957.0, 1454810.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2313719.0, -2353932.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 342
-Particle1: [ 3743676.0, 3808742.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -6057395.0, -6162674.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 343
-Particle1: [ 9801071.0, 9971416.0, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.5858466E7, -1.613409E7, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 344
-Particle1: [ 2.5659536E7, 2.6105506E7, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -4.1518E7, -4.2239596E7, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 345
-Particle1: [ 6.7177536E7, 6.8345104E7, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.08695536E8, -1.10584704E8, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 346
-Particle1: [ 1.75873072E8, 1.78929808E8, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.84568608E8, -2.89514496E8, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 347
-Particle1: [ 4.60441664E8, 4.68444288E8, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -7.450103E8, -7.5795878E8, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 348
-Particle1: [ 1.20545203E9, 1.22640307E9, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.95046234E9, -1.98436186E9, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 349
-Particle1: [ 3.15591424E9, 3.2107648E9, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -5.1063767E9, -5.1951268E9, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 350
-Particle1: [ 8.2622909E9, 8.4058916E9, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.33686682E10, -1.36010179E10, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 351
-Particle1: [ 2.16309596E10, 2.20069089E10, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -3.4999628E10, -3.5607929E10, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 352
-Particle1: [ 5.6630587E10, 5.7614836E10, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -9.1630215E10, -9.3222765E10, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 353
-Particle1: [ 1.48260798E11, 1.50837592E11, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.39891022E11, -2.44060357E11, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 354
-Particle1: [ 3.88151837E11, 3.94897949E11, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -6.2804289E11, -6.3895831E11, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 355
-Particle1: [ 1.01619473E12, 1.03385622E12, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.64423768E12, -1.67281453E12, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 356
-Particle1: [ 2.66043235E12, 2.70667088E12, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -4.30467003E12, -4.37948541E12, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 357
-Particle1: [ 6.9651021E12, 7.086156E12, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.12697719E13, -1.14656417E13, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 358
-Particle1: [ 1.82348751E13, 1.85517967E13, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.95046469E13, -3.00174384E13, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 359
-Particle1: [ 4.7739522E13, 4.8569235E13, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -7.7244165E13, -7.8586678E13, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 360
-Particle1: [ 1.24983683E14, 1.27155913E14, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.02227847E14, -2.0574259E14, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 361
-Particle1: [ 3.27211547E14, 3.32898486E14, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -5.29439411E14, -5.38641076E14, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 362
-Particle1: [ 8.5665096E14, 8.715396E14, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.38609037E15, -1.41018071E15, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 363
-Particle1: [ 2.24274133E15, 2.28172017E15, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -3.62883183E15, -3.69190074E15, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 364
-Particle1: [ 5.871573E15, 5.9736209E15, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -9.5004054E15, -9.6655211E15, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 365
-Particle1: [ 1.53719779E16, 1.5639142E16, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.48723832E16, -2.53046631E16, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 366
-Particle1: [ 4.0244359E16, 4.0943803E16, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -6.5116742E16, -6.6248466E16, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 367
-Particle1: [ 1.05361097E17, 1.07192265E17, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.70477835E17, -1.73440727E17, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 368
-Particle1: [ 2.75838932E17, 2.80632991E17, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -4.46316784E17, -4.54073701E17, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 369
-Particle1: [ 7.2215573E17, 7.3470673E17, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.16847245E18, -1.18878043E18, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 370
-Particle1: [ 1.89062811E18, 1.92348715E18, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -3.05910056E18, -3.11226772E18, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 371
-Particle1: [ 4.9497287E18, 5.035755E18, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -8.0088295E18, -8.1480227E18, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 372
-Particle1: [ 1.2958558E19, 1.3183778E19, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.0967388E19, -2.13318E19, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 373
-Particle1: [ 3.3925946E19, 3.4515579E19, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -5.4893334E19, -5.584738E19, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 374
-Particle1: [ 8.881928E19, 9.036296E19, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.4371261E20, -1.4621034E20, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 375
-Particle1: [ 2.325319E20, 2.365733E20, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -3.762445E20, -3.8278363E20, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 376
-Particle1: [ 6.087764E20, 6.193569E20, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -9.850209E20, -1.0021406E21, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 377
-Particle1: [ 1.5937973E21, 1.6214974E21, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.5788183E21, -2.6236378E21, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 378
-Particle1: [ 4.1726155E21, 4.2451352E21, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -6.751434E21, -6.868773E21, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 379
-Particle1: [ 1.092405E22, 1.1113909E22, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.7675483E22, -1.7982682E22, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 380
-Particle1: [ 2.8599533E22, 2.909659E22, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -4.6275018E22, -4.707927E22, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 381
-Particle1: [ 7.487455E22, 7.617587E22, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.2114957E23, -1.2325514E23, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 382
-Particle1: [ 1.9602411E23, 1.99431E23, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -3.1717368E23, -3.2268612E23, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 383
-Particle1: [ 5.131978E23, 5.221171E23, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -8.303715E23, -8.448032E23, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 384
-Particle1: [ 1.3435692E24, 1.3669203E24, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.1739407E24, -2.2117235E24, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 385
-Particle1: [ 3.51751E24, 3.5786439E24, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -5.6914506E24, -5.790367E24, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 386
-Particle1: [ 9.2089605E24, 9.3690114E24, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.490041E25, -1.5159379E25, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 387
-Particle1: [ 2.410937E25, 2.4528391E25, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -3.900978E25, -3.968777E25, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 388
-Particle1: [ 6.311915E25, 6.421616E25, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.0212893E26, -1.0390392E26, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 389
-Particle1: [ 1.6524807E26, 1.6812008E26, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.67377E26, -2.72024E26, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 390
-Particle1: [ 4.3262507E26, 4.401441E26, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -7.000021E26, -7.121681E26, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 391
-Particle1: [ 1.1326271E27, 1.15231225E27, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.8326291E27, -1.8644803E27, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 392
-Particle1: [ 2.9652563E27, 3.0167926E27, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -4.7978854E27, -4.881273E27, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 393
-Particle1: [ 7.763142E27, 7.898066E27, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.2561027E28, -1.2779339E28, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 394
-Particle1: [ 2.0324168E28, 2.0677406E28, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -3.2885195E28, -3.3456743E28, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 395
-Particle1: [ 5.3209364E28, 5.413415E28, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -8.609456E28, -8.759089E28, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 396
-Particle1: [ 1.3930392E29, 1.4172504E29, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.2539848E29, -2.2931593E29, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 397
-Particle1: [ 3.647024E29, 3.7104094E29, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -5.9010087E29, -6.0035687E29, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 398
-Particle1: [ 9.548033E29, 9.713978E29, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.5449041E30, -1.5717547E30, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 399
-Particle1: [ 2.4997074E30, 2.5431526E30, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -4.0446115E30, -4.1149073E30, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 400
-Particle1: [ 6.544319E30, 6.65806E30, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.058893E31, -1.0772968E31, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 401
-Particle1: [ 1.713325E31, 1.7431027E31, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.772218E31, -2.8203995E31, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 402
-Particle1: [ 4.485543E31, 4.5635025E31, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -7.257761E31, -7.3839023E31, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 403
-Particle1: [ 1.1743304E32, 1.1947405E32, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.9001064E32, -1.9331308E32, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 404
-Particle1: [ 3.0744369E32, 3.1278714E32, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -4.9745433E32, -5.061002E32, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 405
-Particle1: [ 8.04898E32, 8.1888736E32, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.3023524E33, -1.3249877E33, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 406
-Particle1: [ 2.1072503E33, 2.1438751E33, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -3.4096025E33, -3.4688627E33, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 407
-Particle1: [ 5.5168526E33, 5.612738E33, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -8.926455E33, -9.0816005E33, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 408
-Particle1: [ 1.4443308E34, 1.4694338E34, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.3369763E34, -2.3775938E34, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 409
-Particle1: [ 3.7813072E34, 3.8470277E34, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -6.1182834E34, -6.2246215E34, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 410
-Particle1: [ 9.899591E34, 1.0071649E35, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.6017875E35, -1.629627E35, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 411
-Particle1: [ 2.5917465E35, 2.636792E35, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -4.193534E35, -4.266419E35, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 412
-Particle1: [ 6.7852805E35, 6.9032116E35, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.09788144E36, -1.1169631E36, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 413
-Particle1: [ 1.7764095E36, 1.8072842E36, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -2.874291E36, -2.9242475E36, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 414
-Particle1: [ 4.6507004E36, 4.731532E36, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -7.5249914E36, -7.655779E36, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 415
-Particle1: [ 1.2175691E37, 1.2387312E37, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.9700682E37, -2.0043091E37, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 416
-Particle1: [ 3.1876372E37, 3.2430402E37, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -5.157705E37, -5.2473494E37, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 417
-Particle1: [ 8.3453425E37, 8.4903896E37, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -1.3503048E38, -1.3737738E38, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 418
-Particle1: [ 2.184839E38, 2.2228128E38, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 419
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 420
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 421
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 422
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 423
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 424
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 425
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 426
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 427
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 428
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 429
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 430
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 431
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 432
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 433
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 434
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 435
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 436
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 437
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 438
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 439
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 440
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 441
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 442
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 443
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 444
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 445
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 446
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 447
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 448
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 449
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 450
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 451
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 452
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 453
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 454
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 455
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 456
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 457
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 458
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 459
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 460
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 461
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 462
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 463
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 464
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 465
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 466
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 467
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 468
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 469
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 470
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 471
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 472
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 473
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 474
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 475
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 476
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 477
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 478
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 479
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 480
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 481
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 482
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 483
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 484
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 485
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 486
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 487
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 488
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 489
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 490
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 491
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 492
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 493
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 494
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 495
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 496
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 497
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 498
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 499
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 500
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 501
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 502
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 503
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 504
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 505
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 506
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 507
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 508
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 509
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 510
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 511
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 512
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 513
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 514
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 515
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 516
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 517
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 518
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 519
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 520
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 521
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 522
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 523
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 524
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 525
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 526
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 527
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 528
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 529
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 530
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 531
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 532
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 533
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 534
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 535
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 536
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 537
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 538
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 539
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 540
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 541
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 542
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 543
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 544
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 545
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 546
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 547
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 548
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 549
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 550
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 551
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 552
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 553
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 554
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 555
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 556
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 557
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 558
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 559
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 560
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 561
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 562
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 563
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 564
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 565
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 566
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 567
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 568
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 569
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 570
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 571
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 572
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 573
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 574
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 575
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 576
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 577
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 578
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 579
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 580
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 581
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 582
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 583
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 584
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 585
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 586
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 587
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 588
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 589
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 590
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 591
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 592
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 593
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 594
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 595
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 596
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 597
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 598
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 599
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 600
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 601
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 602
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 603
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 604
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 605
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 606
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 607
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 608
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 609
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 610
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 611
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 612
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 613
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 614
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 615
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 616
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 617
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 618
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 619
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 620
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 621
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 622
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 623
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 624
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 625
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 626
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 627
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 628
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 629
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 630
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 631
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 632
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 633
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 634
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 635
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 636
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 637
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 638
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 639
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 640
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 641
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 642
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 643
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 644
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 645
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 646
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 647
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 648
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 649
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 650
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 651
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 652
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 653
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 654
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 655
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 656
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 657
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Time: 658
-Particle1: [ Infinity, Infinity, 0.0 ] | [ 0.0, 0.0, 0.0 ]
-Particle0: [ -Infinity, -Infinity, 0.0 
+t = 359
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 359
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 360
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 360
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 361
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 361
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 362
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 362
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 363
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 363
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 364
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 364
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 365
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 365
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 366
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 366
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 367
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 367
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 368
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 368
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 369
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 369
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 370
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 370
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 371
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 371
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 372
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 372
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 373
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 373
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 374
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 374
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 375
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 375
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 376
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 376
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 377
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 377
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 378
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 378
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 379
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 379
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 380
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 380
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 381
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 381
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 382
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 382
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 383
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 383
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 384
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 384
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 385
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 385
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 386
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 386
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 387
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 387
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 388
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 388
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 389
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 389
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 390
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 390
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 391
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 391
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 392
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 392
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 393
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 393
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 394
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 394
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 395
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 395
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 396
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 396
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 397
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 397
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 398
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 398
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 399
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 399
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 400
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 400
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 401
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 401
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 402
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 402
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 403
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 403
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 404
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 404
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 405
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 405
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 406
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 406
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 407
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 407
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 408
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 408
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 409
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 409
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 410
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 410
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 411
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 411
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 412
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 412
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 413
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 413
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 414
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 414
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 415
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 415
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 416
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 416
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 417
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 417
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 418
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 418
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 419
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 419
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 420
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 420
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 421
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 421
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 422
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 422
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 423
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 423
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 424
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 424
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 425
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 425
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 426
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 426
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 427
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 427
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 428
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 428
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 429
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 429
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 430
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 430
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 431
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 431
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 432
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 432
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 433
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 433
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 434
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 434
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 435
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 435
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 436
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 436
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 437
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 437
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 438
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 438
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 439
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 439
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 440
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 440
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 441
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 441
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 442
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 442
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 443
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 443
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 444
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 444
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 445
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 445
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 446
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 446
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 447
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 447
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 448
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 448
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 449
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 449
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 450
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 450
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 451
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 451
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 452
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 452
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 453
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 453
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 454
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 454
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 455
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 455
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 456
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 456
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 457
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 457
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 458
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 458
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 459
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 459
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 460
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 460
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 461
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 461
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 462
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 462
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 463
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 463
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 464
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 464
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 465
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 465
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 466
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 466
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 467
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 467
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 468
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 468
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 469
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 469
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 470
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 470
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 471
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 471
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 472
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 472
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 473
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 473
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 474
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 474
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 475
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 475
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 476
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 476
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 477
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 477
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 478
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 478
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 479
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 479
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 480
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 480
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 481
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 481
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 482
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 482
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 483
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 483
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 484
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 484
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 485
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 485
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 486
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 486
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 487
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 487
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 488
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 488
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 489
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 489
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 490
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 490
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 491
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 491
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 492
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 492
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 493
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 493
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 494
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 494
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 495
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 495
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 496
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 496
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 497
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 497
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 498
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 498
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 499
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 499
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 500
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 500
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 501
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 501
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 502
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 502
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 503
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 503
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 504
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 504
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 505
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 505
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 506
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 506
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 507
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 507
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 508
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 508
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 509
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 509
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 510
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 510
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 511
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 511
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 512
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 512
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 513
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 513
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 514
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 514
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 515
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 515
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 516
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 516
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 517
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 517
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 518
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 518
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 519
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 519
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 520
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 520
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 521
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 521
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 522
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 522
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 523
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 523
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 524
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 524
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 525
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 525
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 526
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 526
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 527
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 527
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 528
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 528
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 529
+v2: [ 0.0, 0.0, 0.0 ]
+[ 0.0, 0.0, 0.0 ]
+t = 529
+v2: [ 0.

@@ -110,7 +110,7 @@ void draw(){
   background(backgroundColour);
   drawAppropriatePicture();
    
-  // particle manipulation
+  // particle force manipulation
   for(Particle p : particles){
     //p.addForce(wind);
     //p.addForce(gravity);
@@ -122,31 +122,17 @@ void draw(){
   
   // check if particles have 'died'
   for (int i = particles.size() - 1; i >= 0; i--) {
-  Particle p = particles.get(i);
-  if ( p.hasDied ) particles.remove(i);
-  }
-  
-  logger.println("Time: " + ++time);
-  // find particles
-  for(int i = particles.size()-1; i>=0; i--){ 
-  Particle currentParticle = particles.get(i);
-    for(int j = i-1; j>=0; j--){
-      Particle otherParticle = particles.get(j);
-      
-      // resolve contact
-      currentParticle.collideWithParticle(otherParticle);
-      otherParticle.collideWithParticle(currentParticle);
+    Particle p = particles.get(i);
+    if ( p.hasDied ) particles.remove(i);
     }
-    logger.println(currentParticle.name + ": " + currentParticle.position + " | " + currentParticle.velocity);
-  }
   
-  // resolve collision #2
-  //for(Particle part1 : particles){
-  //  for(Particle part2 : particles){
-  //    part2.collideWithParticle(part1);
-  //  }
-  //}
+  for(Particle part1 : particles){
+    for(Particle part2 : particles){
+      part2.collideWithParticle(part1);
+    }
+  }
   
   // show particle count
   showParticleCount();
+  showTime(time++);
 }

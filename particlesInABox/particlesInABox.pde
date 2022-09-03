@@ -87,7 +87,8 @@ void keyPressed(){
   else if (keyCode == 82){
     for (int i = particles.size() - 1; i >= 0; i--) {
     particles.remove(i);
-    } 
+    }
+    time = 0;
   }
   
   // make image transparent

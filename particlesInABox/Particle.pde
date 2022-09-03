@@ -94,23 +94,29 @@ class Particle{
   }
   
   void collideWithParticle(Particle otherParticle){
-    PVector otherPos = otherParticle.position;
-    String otherN = otherParticle.name;
-    float otherR = otherParticle.radius;
+ //<>// //<>// //<>//
     
-    boolean sameParticle = name == otherN; //<>// //<>//
-    if(sameParticle) return; //<>//
+    // check if spheres overlap and resolve contact
+    if(checkCollision(otherParticle)){
+      // resolve contact
+      //resolveContact(otherParticle);
+      collisionResolution(otherParticle);
+    }
+  }
+  
+  boolean checkCollision(Particle otherParticle){
+    PVector otherPos = otherParticle.position;
+    
+    boolean sameParticle = name == otherParticle.name;
+    if(sameParticle) return false;
     
     PVector displacementDiff = new PVector();
     PVector.sub(position, otherPos, displacementDiff);
     
-    float maxDist = radius + otherR; //<>//
+    float maxDist = radius + otherParticle.radius;
     
-    // check if spheres overlap and resolve contact
-    if( abs(displacementDiff.x) <= maxDist && abs(displacementDiff.y) <= maxDist ){
-      logger.println("t = " + time);
-      resolveContact(otherParticle);
-    }
+    if( displacementDiff.mag() <= maxDist ) return true;
+    return false;
   }
   
   void resolveContact(Particle otherParticle){
@@ -150,6 +156,35 @@ class Particle{
     
     // assign new velocity to current velocity
     velocity = v2;
+  }
+  
+  void collisionResolution(Particle otherParticle){
+    // this is the algorithm implemented: 
+    //from https://studiofreya.com/3d-math-and-physics/simple-sphere-sphere-collision-detection-and-collision-response/
+    
+    PVector vecx = PVector.sub(position,otherParticle.position);
+    vecx.normalize();
+    
+    PVector vecv1 = velocity;
+    float x1 = vecx.dot(vecv1);
+    PVector vecv1x = vecx.mult(x1);
+    PVector vecv1y = PVector.sub(vecv1, vecv1x);
+    float m1 = mass;
+    
+    vecx.mult(-1);
+    PVector vecv2 = otherParticle.velocity;
+    float x2 = vecx.dot(vecv2);
+    PVector vecv2x = vecx.mult(x2);
+    PVector vecv2y = PVector.sub(vecv2, vecv2x);
+    float m2 = otherParticle.mass;
+    
+    velocity = vecv1x.mult((m1-m2)/(m1+m2));
+    velocity.add(vecv2x.mult((2*m2)/(m1+m2)));
+    velocity.add(vecv1y);
+    
+    otherParticle.velocity = vecv1x.mult((2*m1)/(m1+m2));
+    otherParticle.velocity.add(vecv2x.mult((m2-m1)/(m1+m2)));
+    otherParticle.velocity.add(vecv2y); 
   }
   
   void controlParticleColour(){ 

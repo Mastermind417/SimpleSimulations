@@ -98,7 +98,7 @@ class Particle{
     String otherN = otherParticle.name;
     float otherR = otherParticle.radius;
     
-    boolean sameParticle = name == otherN;
+    boolean sameParticle = name == otherN; //<>// //<>//
     if(sameParticle) return; //<>//
     
     PVector displacementDiff = new PVector();
@@ -114,6 +114,7 @@ class Particle{
   }
   
   void resolveContact(Particle otherParticle){
+    // CHECK THIS RESOLUTION CAREFULLY [02.09.22] 
     // this is taking into account an elastic collision of a classical two particle system
     float m2 = mass;
     float m1 = otherParticle.mass;

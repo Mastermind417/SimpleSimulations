@@ -117,11 +117,11 @@ void draw(){
   // particle manipulation
   for(Particle p : particles){
     //p.addForce(wind);
-    p.addForce(gravity);
+    //p.addForce(gravity);
     p.addForce(extForce);
     p.update();
     p.display();
-    p.controlParticleColour();
+    //p.controlParticleColour();
   }
   
   // new platform addition

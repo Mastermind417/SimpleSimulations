@@ -14,6 +14,12 @@ class Particle{
   PVector boundary;
   PVector maxVel;
   
+  String directoryLoc = new String("VisualPics");
+  String[] photosLocs = new String[]{"Mario1.jpg","Luigi1.jpg", "Wario1.jpg", "Waluigi1.jpg"};
+  
+  int picRandomSeed;
+  PImage particleImg;  
+  
   Particle(float x, float y, float vx, float vy, float bx, float by){
     position = new PVector(x,y);
     velocity = new PVector(vx, vy);
@@ -22,6 +28,11 @@ class Particle{
     boundary = new PVector(bx, by);
     maxVel = new PVector(0.001,0.001);
     lifetime = 0;
+    
+    // resize particle(character) image
+    picRandomSeed = (int)random(0, photosLocs.length);
+    particleImg = loadImage(directoryLoc + "/" + photosLocs[picRandomSeed]);
+    particleImg.resize(diameter,diameter);
   }
   
   void update(){
@@ -52,6 +63,7 @@ class Particle{
   
   void display(){
     circle(position.x, position.y, diameter);
+    image(particleImg, position.x - diameter/2, position.y - diameter/2);
   }
   
   // F = ma => a = F/M

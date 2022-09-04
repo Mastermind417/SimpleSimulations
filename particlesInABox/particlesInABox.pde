@@ -23,6 +23,7 @@ int picCounter = 0; //{0,1,2,3,4} -> {No pic, Up, Down, Left, Right};
 
 PrintWriter logger;
 int time = 0;
+boolean simPaused;
 
 void settings(){
   size(w,h); 
@@ -30,6 +31,7 @@ void settings(){
 
 void setup(){
   logger = createWriter("logger.txt");
+  simPaused = false;
   //frameRate(1);
   
   particles = new ArrayList<Particle>();  
@@ -84,11 +86,28 @@ void keyPressed(){
     return;
   }
   
-  else if (keyCode == 82){
+  else if (keyCode == 82){ // 'reset'. when 'r' is pressed particles disappear and time is set back to 0
     for (int i = particles.size() - 1; i >= 0; i--) {
     particles.remove(i);
     }
+    
     time = 0;
+    
+    if(simPaused) {
+      loop();
+      simPaused = false;
+    }
+  }
+  
+  else if (keyCode == 80){ // 'pause', when 'p' is pressed time freezes - simulation is paused
+    if(!simPaused) {
+      noLoop();
+      simPaused = true;
+    }
+    else {
+      loop();
+      simPaused = false;
+    } 
   }
   
   // make image transparent
@@ -127,17 +146,9 @@ void draw(){
     p.controlParticleColour();
   }
   
-  // check if particles have 'died'
-  for (int i = particles.size() - 1; i >= 0; i--) {
-    Particle p = particles.get(i);
-    if ( p.hasDied ) particles.remove(i);
-    }
-  
-  for(Particle part1 : particles){
-    for(Particle part2 : particles){
-      part2.collideWithParticle(part1);
-    }
-  }
+  particleDeletion();
+
+  collisionBetweenParticles();
   
   // show particle count
   showParticleCount();

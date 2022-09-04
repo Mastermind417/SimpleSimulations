@@ -3,11 +3,11 @@ class Particle{
   PVector velocity;
   PVector acceleration;
   
-  int lifetime;
+  int life;
   boolean hasDied = false;
   String name;
   
-  int diameter = (int)random(40,80);
+  int diameter;
   float radius;
   
   final float dampening = 0.999;
@@ -27,7 +27,8 @@ class Particle{
     maxVel = new PVector(0.001,0.001);
     name = name_;
     
-    lifetime = 1000;
+    life = 1000;
+    diameter = (int)random(20,80);
     radius = diameter/2;
   }
   
@@ -52,7 +53,7 @@ class Particle{
     // clear total force at the end
     force.mult(0);
     
-    lifetime -= 1;
+    life -= 1;
     killParticle();
   }
   
@@ -94,13 +95,11 @@ class Particle{
   }
   
   void collideWithParticle(Particle otherParticle){
- //<>// //<>// //<>//
-    
-    // check if spheres overlap and resolve contact
+    // check if spheres overlap and resolve contact //<>//
     if(checkCollision(otherParticle)){
       // resolve contact
       //resolveContact(otherParticle);
-      resolveContact(otherParticle);
+      bounceContact(otherParticle);
     }
   }
   
@@ -115,37 +114,77 @@ class Particle{
     
     float maxDist = radius + otherParticle.radius;
     
-    if( displacementDiff.mag() <= maxDist ) return true;
+    // 04.09.22
+    float distanceApart = abs(displacementDiff.mag() - maxDist);
+    logger.println("Time: " + time + " | " + abs(displacementDiff.mag() - maxDist));
+    if( distanceApart < 10 && distanceApart > 5) { // collision is within 5-10 pixels
+      logger.println(" Hit!"); 
+      return true;
+    }
     return false;
+    
+    //if( displacementDiff.mag() <= maxDist ) return true;
+    //return false;
+    
+    
   }
   
   void resolveContact(Particle otherParticle){
     // this is the algorithm implemented: 
     //from https://studiofreya.com/3d-math-and-physics/simple-sphere-sphere-collision-detection-and-collision-response/
     
-    PVector vecx = PVector.sub(position,otherParticle.position);
-    vecx.normalize();
+    PVector x = PVector.sub(position,otherParticle.position);
+    x.normalize();
     
-    PVector vecv1 = velocity;
-    float x1 = vecx.dot(vecv1);
-    PVector vecv1x = vecx.mult(x1);
-    PVector vecv1y = PVector.sub(vecv1, vecv1x);
+    PVector v1 = velocity;
+    float x1 = x.dot(v1);
+    PVector v1x = x.mult(x1);
+    PVector v1y = PVector.sub(v1, v1x);
     float m1 = mass;
     
-    vecx.mult(-1);
-    PVector vecv2 = otherParticle.velocity;
-    float x2 = vecx.dot(vecv2);
-    PVector vecv2x = vecx.mult(x2);
-    PVector vecv2y = PVector.sub(vecv2, vecv2x);
+    x.mult(-1);
+    PVector v2 = otherParticle.velocity;
+    float x2 = x.dot(v2);
+    PVector v2x = x.mult(x2);
+    PVector v2y = PVector.sub(v2, v2x);
     float m2 = otherParticle.mass;
     
-    velocity = vecv1x.mult((m1-m2)/(m1+m2));
-    velocity.add(vecv2x.mult((2*m2)/(m1+m2)));
-    velocity.add(vecv1y);
+    velocity = v1x.mult((m1-m2)/(m1+m2));
+    velocity.add(v2x.mult((2*m2)/(m1+m2)));
+    velocity.add(v1y);
     
-    //otherParticle.velocity = vecv1x.mult((2*m1)/(m1+m2));
-    //otherParticle.velocity.add(vecv2x.mult((m2-m1)/(m1+m2)));
-    //otherParticle.velocity.add(vecv2y); 
+    // comment/uncomment according to implemention 1 or 2 in resolveContact
+    //otherParticle.velocity = v1x.mult((2*m1)/(m1+m2));
+    //otherParticle.velocity.add(v2x.mult((m2-m1)/(m1+m2)));
+    //otherParticle.velocity.add(v2y); 
+  }
+  
+  void bounceContact(Particle otherParticle){
+    // Bounce algorithm developed by myself [04.09.22]
+    
+    print("Initial velocity: " + velocity);
+    PVector v1 = velocity;
+    PVector v2 = otherParticle.velocity;
+    
+    if((v1.x * v2.x) < 0) {
+      println(v1.x);
+      println(v2.x);
+      v1.x *= -1;
+      v2.x *= -1;
+      println(v1.x);
+      println(v2.x);
+      println();
+    }
+    
+    if((v1.y * v2.y) < 0) {
+      v1.y *= -1;
+      v2.y *= -1;
+    }    
+    
+    velocity = v1;
+    print("Final velocity: " + velocity);
+    
+    //otherParticle.velocity = v2;
   }
   
   void controlParticleColour(){ 
@@ -166,7 +205,7 @@ class Particle{
   }
   
   void killParticle(){
-    if(lifetime > 0) return;
+    if(life > 0) return;
     
     diameter = 0;
     hasDied = true;

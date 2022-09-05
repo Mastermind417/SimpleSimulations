@@ -56,17 +56,14 @@ void mousePressed(){
 }
 
 void mouseDragged(){
-  strokeWeight(2);
-  fill(128,128,128);
-  line(oldMouse.x, oldMouse.y, mouseX, mouseY);
-  
   newMouse = new PVector(mouseX, mouseY);
+  //drawVelLine(); 
 }
 
 void mouseReleased(){
   Particle lastParticle = particles.get(particles.size()-1);
   PVector newVel = PVector.sub(oldMouse, newMouse);
-  newVel.div(50);
+  newVel.div(100);
   lastParticle.setVelocity(newVel);
 }
 
@@ -149,7 +146,7 @@ void keyReleased(){
 void draw(){  
   background(backgroundColour);
   drawAppropriatePicture();
-  
+
   // particle force manipulation
   for(Particle p : particles){
     //p.addForce(wind);
@@ -158,6 +155,8 @@ void draw(){
     p.update();
     p.display();
   }
+  
+  drawVelLine();
   
   particleDeath();
 

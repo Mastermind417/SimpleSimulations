@@ -18,6 +18,7 @@ class Particle{
   
   PVector boundary;
   PVector maxVel;
+  PVector minVel;
   
   Particle(float x, float y, float vx, float vy, float bx, float by, String name_){
     position = new PVector(x,y);
@@ -26,12 +27,13 @@ class Particle{
     force = new PVector(0,0);
     boundary = new PVector(bx, by);
     maxVel = new PVector(0.001,0.001);
+    minVel = new PVector(0.001, 0.001);
     name = name_;
     
     life = 10000;
-    diameter = (int)random(20,80);
+    diameter = (int)random(20,40);
     radius = diameter/2;
-    mass = map(radius, 10,20,1,10); 
+    mass = map(radius, 5,10,1,10); 
     colour = new int[]{(int)random(10,200), (int)random(10,200), (int)random(10,200)};
   }
   
@@ -39,6 +41,22 @@ class Particle{
   void setVelocity(PVector newVelocity){
     velocity = newVelocity;
   }
+  
+  void boundVelocity(){
+    if( velocity.x > maxVel.x ) {
+      velocity.x = maxVel.x;
+    }
+    else if ( velocity.x < minVel.x ){
+      velocity.x = minVel.x;
+    }
+    
+    if( velocity.y > maxVel.y ) {
+      velocity.x = maxVel.x;
+    }
+    else if ( velocity.y < minVel.y ){
+      velocity.y = minVel.y;
+    }
+}
   
   void update(){
     // apply boundary conditions
@@ -56,7 +74,7 @@ class Particle{
     position.add(velocity);
     
     // record maximum velocity
-    recordMaxVel();
+    recordExtremeVelocity();
     
     // clear total force at the end
     force.mult(0);
@@ -118,13 +136,20 @@ class Particle{
     circle(position.x, position.y, diameter);
   }
   
-  void recordMaxVel(){
+  void recordExtremeVelocity(){
     if(velocity.x > maxVel.x){
       maxVel.x = velocity.x;
     }
     if(velocity.y > maxVel.y){
       maxVel.y = velocity.y;
-    }  
+    }
+    
+    if(velocity.x < minVel.x){
+      minVel.x = velocity.x;
+    }
+    if(velocity.y < minVel.y){
+      minVel.y = velocity.y;
+    }
   }
   
   void killParticle(){

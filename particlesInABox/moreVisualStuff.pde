@@ -45,3 +45,11 @@ void showTime(int time){
   text("Time: " + timeToShow, 0, 40); 
   
 }
+
+void drawVelLine(){
+  if(mousePressed){
+    strokeWeight(2);
+    fill(128,128,128);
+    line(oldMouse.x, oldMouse.y, newMouse.x, newMouse.y);
+  }
+}

@@ -10,7 +10,7 @@ void collisionBetweenParticles(){
   //  Particle p1 = particles.get(i);
   //  for(int j = i-1; j>=0;j--){
   //    Particle p2 = particles.get(j);
-  //    collision(p2, p1); // remember to uncomment the last 3 lines in 'resolveContact'
+  //    p2.collideWithParticle(p1); // remember to uncomment the last 3 lines in 'resolveContact'
   //  }
   //}
   
@@ -18,7 +18,7 @@ void collisionBetweenParticles(){
   for(Particle part1 : particles){
     for(Particle part2 : particles){
       // remember to comment the last 3 lines in 'resolveContact'
-      //collision(part1, part2);
+      //collision(part1, part2); // this doesn't work
       part2.collideWithParticle(part1);
     }
   }

@@ -19,19 +19,20 @@ void makeImgTransparent(){
 
 void drawBottomSquare(){
   int sL = 300;
-  square(w - sL/2, h - sL/2, sL); // sL/2 is to centre the box better
   stroke(100);
   //fill(200);
+  square(w - sL/2, h - sL/2, sL); // sL/2 is to centre the box better
 }
 
-void showParticleCount(){
+void showParticleCount(String particleCount){
   textSize(100);
   
-  String countToShow = str(particles.size());
-  if (countToShow == "0") countToShow = "";
+  //String countToShow = str(particles.size());
+  if (particleCount == "0") particleCount = "";
   
-  text("Particle Count: " + countToShow, 0, h); 
-  fill(128, 128, 128);
+  stroke(0);
+  fill(256, 128, 128);
+  text("Particle Count: " + particleCount, 0, h);   
 }
 
 void showTime(int time){
@@ -39,6 +40,8 @@ void showTime(int time){
   
   String timeToShow = str(time);
   
+  stroke(0);
+  fill(128, 128, 256);
   text("Time: " + timeToShow, 0, 40); 
-  fill(128, 128, 128);
+  
 }

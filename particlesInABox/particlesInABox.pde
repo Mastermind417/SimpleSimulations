@@ -2,7 +2,7 @@
 
 final int w = 1000;
 final int h = 1000; 
-final int backgroundColour = 0; // 0 black, 255 white
+int backgroundColour = 100; // 0 black, 255 white
 
 ArrayList<Particle> particles;
 
@@ -24,6 +24,9 @@ int picCounter = 0; //{0,1,2,3,4} -> {No pic, Up, Down, Left, Right};
 PrintWriter logger;
 int time = 0;
 boolean simPaused;
+
+PVector oldMouse = new PVector(0,0,0);
+PVector newMouse = new PVector(0,0,0);
 
 void settings(){
   size(w,h); 
@@ -47,13 +50,24 @@ void setup(){
 void mousePressed(){
   Particle p = new Particle(mouseX, mouseY, 0,0, w, h, "Particle" + particles.size());
   particles.add(p);
+  
+  oldMouse = new PVector(mouseX, mouseY);
+  newMouse = oldMouse;
 }
 
 void mouseDragged(){
-  float vx = mouseX - pmouseX;
-  float vy = mouseY - pmouseY;
-  Particle p = new Particle(mouseX, mouseY, vx, vy, w, h, "Particle" + particles.size());
-  particles.add(p);
+  strokeWeight(2);
+  fill(128,128,128);
+  line(oldMouse.x, oldMouse.y, mouseX, mouseY);
+  
+  newMouse = new PVector(mouseX, mouseY);
+}
+
+void mouseReleased(){
+  Particle lastParticle = particles.get(particles.size()-1);
+  PVector newVel = PVector.sub(oldMouse, newMouse);
+  newVel.div(50);
+  lastParticle.setVelocity(newVel);
 }
 
 void keyPressed(){
@@ -87,11 +101,11 @@ void keyPressed(){
   }
   
   else if (keyCode == 82){ // 'reset'. when 'r' is pressed particles disappear and time is set back to 0
-    for (int i = particles.size() - 1; i >= 0; i--) {
-    particles.remove(i);
-    }
-    
+    particleDeletion();  
     time = 0;
+    
+    oldMouse = new PVector(0,0,0);
+    newMouse = new PVector(0,0,0);
     
     if(simPaused) {
       loop();
@@ -135,7 +149,7 @@ void keyReleased(){
 void draw(){  
   background(backgroundColour);
   drawAppropriatePicture();
-   
+  
   // particle force manipulation
   for(Particle p : particles){
     //p.addForce(wind);
@@ -143,14 +157,13 @@ void draw(){
     p.addForce(extForce);
     p.update();
     p.display();
-    p.controlParticleColour();
   }
   
-  particleDeletion();
+  particleDeath();
 
   collisionBetweenParticles();
   
   // show particle count
-  showParticleCount();
+  showParticleCount(str(particles.size()));
   showTime(time++);
 }

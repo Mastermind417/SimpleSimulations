@@ -10,23 +10,32 @@ void collisionBetweenParticles(){
   //  Particle p1 = particles.get(i);
   //  for(int j = i-1; j>=0;j--){
   //    Particle p2 = particles.get(j);
-  //    p1.collideWithParticle(p2); // remember to uncomment the last 3 lines in 'resolveContact'
+  //    collision(p2, p1); // remember to uncomment the last 3 lines in 'resolveContact'
   //  }
   //}
   
   // IMPLEMENTATION 2
   for(Particle part1 : particles){
     for(Particle part2 : particles){
-      part1.collideWithParticle(part2); // remember to comment the last 3 lines in 'resolveContact'
+      // remember to comment the last 3 lines in 'resolveContact'
+      //collision(part1, part2);
+      part2.collideWithParticle(part1);
     }
   }
 
 }
 
-void particleDeletion(){
+void particleDeath(){
   // check if particles have 'died'
   for (int i = particles.size() - 1; i >= 0; i--) {
     Particle p = particles.get(i);
     if ( p.hasDied ) particles.remove(i);
+    }
+}
+
+void particleDeletion(){
+  // remove all particles
+  for (int i = particles.size() - 1; i >= 0; i--) {
+    Particle p = particles.remove(i);
     }
 }

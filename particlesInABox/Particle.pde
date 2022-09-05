@@ -9,6 +9,7 @@ class Particle{
   
   int diameter;
   float radius;
+  int[] colour;
   
   final float dampening = 0.999;
   
@@ -21,15 +22,22 @@ class Particle{
   Particle(float x, float y, float vx, float vy, float bx, float by, String name_){
     position = new PVector(x,y);
     velocity = new PVector(vx, vy);
-    mass = 1;
+    
     force = new PVector(0,0);
     boundary = new PVector(bx, by);
     maxVel = new PVector(0.001,0.001);
     name = name_;
     
-    life = 1000;
+    life = 10000;
     diameter = (int)random(20,80);
     radius = diameter/2;
+    mass = map(radius, 10,20,1,10); 
+    colour = new int[]{(int)random(10,200), (int)random(10,200), (int)random(10,200)};
+  }
+  
+  
+  void setVelocity(PVector newVelocity){
+    velocity = newVelocity;
   }
   
   void update(){
@@ -58,7 +66,13 @@ class Particle{
   }
   
   void display(){
+    int oppColour = backgroundColour != 0 ? 0 : 255; 
+    stroke(oppColour);
+    strokeWeight(3);
+    fill(colour[0], colour[1], colour[2]);
     circle(position.x, position.y, diameter);
+    
+    //controlParticleColour();
   }
   
   // F = ma => a = F/M
@@ -94,39 +108,51 @@ class Particle{
     }    
   }
   
-  void collideWithParticle(Particle otherParticle){
-    // check if spheres overlap and resolve contact //<>//
-    if(checkCollision(otherParticle)){
-      // resolve contact
-      //resolveContact(otherParticle);
-      bounceContact(otherParticle);
-    }
+ //<>//
+  
+  void controlParticleColour(){ 
+    int colourX = (int)map(abs(velocity.x), 0, maxVel.x, 255, 50);
+    int colourY = (int)map(abs(velocity.y), 0, maxVel.y, 255, 50);
+    
+    fill(colourX, colourY, 150);
+    circle(position.x, position.y, diameter);
   }
   
-  boolean checkCollision(Particle otherParticle){
-    PVector otherPos = otherParticle.position;
+  void recordMaxVel(){
+    if(velocity.x > maxVel.x){
+      maxVel.x = velocity.x;
+    }
+    if(velocity.y > maxVel.y){
+      maxVel.y = velocity.y;
+    }  
+  }
+  
+  void killParticle(){
+    if(life > 0) return;
     
+    diameter = 0;
+    hasDied = true;
+  }
+  
+  void collideWithParticle(Particle otherParticle){
+  // check if spheres overlap and resolve contact
+  if(checkCollision(otherParticle)){
+    // resolve contact
+    resolveContact(otherParticle);
+  }
+}
+
+  boolean checkCollision(Particle otherParticle){
     boolean sameParticle = name == otherParticle.name;
     if(sameParticle) return false;
     
     PVector displacementDiff = new PVector();
-    PVector.sub(position, otherPos, displacementDiff);
+    PVector.sub(position, otherParticle.position, displacementDiff);
     
     float maxDist = radius + otherParticle.radius;
     
-    // 04.09.22
-    float distanceApart = abs(displacementDiff.mag() - maxDist);
-    logger.println("Time: " + time + " | " + abs(displacementDiff.mag() - maxDist));
-    if( distanceApart < 10 && distanceApart > 5) { // collision is within 5-10 pixels
-      logger.println(" Hit!"); 
-      return true;
-    }
-    return false;
-    
-    //if( displacementDiff.mag() <= maxDist ) return true;
-    //return false;
-    
-    
+    if( displacementDiff.mag() <= maxDist ) return true;
+    return false;    
   }
   
   void resolveContact(Particle otherParticle){
@@ -157,57 +183,5 @@ class Particle{
     //otherParticle.velocity = v1x.mult((2*m1)/(m1+m2));
     //otherParticle.velocity.add(v2x.mult((m2-m1)/(m1+m2)));
     //otherParticle.velocity.add(v2y); 
-  }
-  
-  void bounceContact(Particle otherParticle){
-    // Bounce algorithm developed by myself [04.09.22]
-    
-    print("Initial velocity: " + velocity);
-    PVector v1 = velocity;
-    PVector v2 = otherParticle.velocity;
-    
-    if((v1.x * v2.x) < 0) {
-      println(v1.x);
-      println(v2.x);
-      v1.x *= -1;
-      v2.x *= -1;
-      println(v1.x);
-      println(v2.x);
-      println();
-    }
-    
-    if((v1.y * v2.y) < 0) {
-      v1.y *= -1;
-      v2.y *= -1;
-    }    
-    
-    velocity = v1;
-    print("Final velocity: " + velocity);
-    
-    //otherParticle.velocity = v2;
-  }
-  
-  void controlParticleColour(){ 
-    int colourX = (int)map(abs(velocity.x), 0, maxVel.x, 255, 50);
-    int colourY = (int)map(abs(velocity.y), 0, maxVel.y, 255, 50);
-    
-    circle(position.x, position.y, diameter);
-    fill(colourX, colourY, 150);
-  }
-  
-  void recordMaxVel(){
-    if(velocity.x > maxVel.x){
-      maxVel.x = velocity.x;
-    }
-    if(velocity.y > maxVel.y){
-      maxVel.y = velocity.y;
-    }  
-  }
-  
-  void killParticle(){
-    if(life > 0) return;
-    
-    diameter = 0;
-    hasDied = true;
   }
 }

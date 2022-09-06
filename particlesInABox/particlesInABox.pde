@@ -35,7 +35,7 @@ void settings(){
 void setup(){
   logger = createWriter("logger.txt");
   simPaused = false;
-  //frameRate(1);
+  //frameRate(20);
   
   particles = new ArrayList<Particle>();  
   background(backgroundColour);
@@ -99,6 +99,7 @@ void keyPressed(){
   
   else if (keyCode == 82){ // 'reset'. when 'r' is pressed particles disappear and time is set back to 0
     particleDeletion();  
+    logger = createWriter("logger.txt");
     time = 0;
     
     oldMouse = new PVector(0,0,0);

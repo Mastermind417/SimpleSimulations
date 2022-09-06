@@ -33,7 +33,7 @@ class Particle{
     life = 10000;
     diameter = (int)random(20,40);
     radius = diameter/2;
-    mass = map(radius, 5,10,1,10); 
+    mass = map(radius, 5,20,1,100); 
     colour = new int[]{(int)random(10,200), (int)random(10,200), (int)random(10,200)};
   }
   
@@ -41,22 +41,6 @@ class Particle{
   void setVelocity(PVector newVelocity){
     velocity = newVelocity;
   }
-  
-  void boundVelocity(){
-    if( velocity.x > maxVel.x ) {
-      velocity.x = maxVel.x;
-    }
-    else if ( velocity.x < minVel.x ){
-      velocity.x = minVel.x;
-    }
-    
-    if( velocity.y > maxVel.y ) {
-      velocity.x = maxVel.x;
-    }
-    else if ( velocity.y < minVel.y ){
-      velocity.y = minVel.y;
-    }
-}
   
   void update(){
     // apply boundary conditions
@@ -157,56 +141,5 @@ class Particle{
     
     diameter = 0;
     hasDied = true;
-  }
-  
-  void collideWithParticle(Particle otherParticle){
-  // check if spheres overlap and resolve contact
-  if(checkCollision(otherParticle)){
-    // resolve contact
-    resolveContact(otherParticle);
-  }
-}
-
-  boolean checkCollision(Particle otherParticle){
-    boolean sameParticle = name == otherParticle.name;
-    if(sameParticle) return false;
-    
-    PVector displacementDiff = new PVector();
-    PVector.sub(position, otherParticle.position, displacementDiff);
-    
-    float maxDist = radius + otherParticle.radius;
-    
-    if( displacementDiff.mag() <= maxDist ) return true;
-    return false;    
-  }
-  
-  void resolveContact(Particle otherParticle){
-    // this is the algorithm implemented: 
-    //from https://studiofreya.com/3d-math-and-physics/simple-sphere-sphere-collision-detection-and-collision-response/
-    
-    PVector x = PVector.sub(position,otherParticle.position);
-    x.normalize();
-    
-    PVector v1 = velocity;
-    float x1 = x.dot(v1);
-    PVector v1x = x.mult(x1);
-    PVector v1y = PVector.sub(v1, v1x);
-    float m1 = mass;
-    
-    x.mult(-1);
-    PVector v2 = otherParticle.velocity;
-    float x2 = x.dot(v2);
-    PVector v2x = x.mult(x2);
-    PVector v2y = PVector.sub(v2, v2x);
-    float m2 = otherParticle.mass;
-    
-    velocity = v1x.mult((m1-m2)/(m1+m2));
-    velocity.add(v2x.mult((2*m2)/(m1+m2)));
-    velocity.add(v1y);
-    
-    // comment/uncomment according to implemention 1 or 2 in resolveContact
-    //otherParticle.velocity = v1x.mult((2*m1)/(m1+m2));
-    //otherParticle.velocity.add(v2x.mult((m2-m1)/(m1+m2)));
-    //otherParticle.velocity.add(v2y); 
   }
 }

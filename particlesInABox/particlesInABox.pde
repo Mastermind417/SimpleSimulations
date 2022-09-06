@@ -63,7 +63,7 @@ void mouseDragged(){
 void mouseReleased(){
   Particle lastParticle = particles.get(particles.size()-1);
   PVector newVel = PVector.sub(oldMouse, newMouse);
-  newVel.div(100);
+  newVel.div(50);
   lastParticle.setVelocity(newVel);
 }
 

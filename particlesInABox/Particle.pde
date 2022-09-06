@@ -11,7 +11,7 @@ class Particle{
   float radius;
   int[] colour;
   
-  final float dampening = 0.999;
+  final float dampening = 0.99;
   
   PVector force;
   float mass;
@@ -54,7 +54,7 @@ class Particle{
     
     // update kinematics
     velocity.add(acceleration);
-    //velocity.x *= dampening;
+    velocity.mult(dampening);
     position.add(velocity);
     
     // record maximum velocity

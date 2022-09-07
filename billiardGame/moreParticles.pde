@@ -22,9 +22,22 @@ void collisionBetweenParticles(){
 
 }
 
-void particleDeletion(){
-  // remove all particles
-  for (int i = particles.size() - 1; i >= 0; i--) {
-    Particle p = particles.remove(i);
+void collisionBetweenParticlesAndEdges(){
+  for(Particle p : particles){
+    collideWithEdges(p);
+  }
+}
+
+void collisionBetweenParticlesAndHoles(){
+  for(int i = particles.size() - 1; i>=0 ; i--){
+    Particle p = particles.get(i);
+    collideWithHole(p);
+    if ( p.hasEnteredHole ) {
+      //if(p.colour == white) initialiseWhiteBall();
+      particles.remove(i);
+      
+      }
     }
+  }
+
 }

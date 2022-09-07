@@ -22,7 +22,9 @@ class Particle{
   PVector maxVel;
   PVector minVel;
   
-  Particle(float x, float y, float vx, float vy, float bx, float by, String name_){
+  boolean hasEnteredHole;
+  
+  Particle(float x, float y, float vx, float vy, float bx, float by, int[] colour_){
     position = new PVector(x,y);
     velocity = new PVector(vx, vy);
     
@@ -30,21 +32,16 @@ class Particle{
     boundary = new PVector(bx, by);
     maxVel = new PVector(0.001,0.001);
     minVel = new PVector(0.001, 0.001);
-    name = name_;
+    name = "Particle" + particles.size();
     
     life = 10000;
-    diameter = (int)random(20,40);
+    diameter = (int)random(30,30);
     radius = diameter/2;
     mass = map(radius, 5,20,1,100); 
     
-    colour = new int[]{209, 32, 79};
-    
-    // second ball is white
-    if(particles.size() == 1) {
-      for(int i = 0; i < colour.length; i++){
-        colour[i] = 255;
-      }
-    }
+    colour = colour_;
+    hasEnteredHole = false;
+   
   }
   
   

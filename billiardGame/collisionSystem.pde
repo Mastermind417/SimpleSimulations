@@ -62,3 +62,55 @@ void resolveContact(Particle particle, Particle otherParticle){
   otherParticle.velocity.add(partv2_2);
   otherParticle.velocity.add(v2y); 
 }
+
+void collideWithEdges(Particle particle){
+  float yminus = particle.position.y - particle.radius;
+  float yplus = particle.position.y + particle.radius;
+  float xminus = particle.position.x - particle.radius;
+  float xplus = particle.position.x + particle.radius;
+  
+  
+  // collision detection and resolution(bounces off the edge)
+  // top edges
+  if(yminus <= edges.get(0).position.y + edges.get(0).size.y && xplus >= edges.get(0).position.x && xminus <= edges.get(0).position.x + edges.get(0).size.x){
+    
+    particle.velocity.y *= -1;
+  }
+  else if(yminus <= edges.get(1).position.y + edges.get(1).size.y && xplus >= edges.get(1).position.x && xminus <= edges.get(1).position.x + edges.get(1).size.x){
+    particle.velocity.y *= -1;
+  }
+  
+  // bottom edges
+  else if(yplus >= edges.get(4).position.y && xplus >= edges.get(4).position.x && xminus <= edges.get(4).position.x + edges.get(4).size.x){
+    particle.velocity.y *= -1;
+  }
+  else if(yplus >= edges.get(5).position.y && xplus >= edges.get(5).position.x && xminus <= edges.get(5).position.x + edges.get(5).size.x){
+    particle.velocity.y *= -1;
+  }
+  
+  // side edges
+  else if(xminus <= edges.get(2).position.x + edges.get(2).size.x && yplus >= edges.get(2).position.y && yminus <= edges.get(2).position.y + edges.get(2).size.y){
+    particle.velocity.x *= -1;
+  }
+  
+  else if(xplus >= edges.get(3).position.x && yplus >= edges.get(3).position.y && yminus <= edges.get(3).position.y + edges.get(3).size.y){
+    particle.velocity.x *= -1;
+  }
+
+}
+
+void collideWithHole(Particle particle){
+  PVector pos = particle.position;
+  float r = particle.radius;
+  
+  for(Hole h : holes){
+    PVector hPos = h.position;
+    float holeRadius = h.radius;
+    if(pos.x - r >= hPos.x - holeRadius && pos.x + r <= hPos.x + holeRadius && pos.y - r >= hPos.y - holeRadius && pos.y + r <= hPos.y + holeRadius){
+      particle.setVelocity(new PVector(0,0,0));
+      particle.hasEnteredHole = true;
+    } 
+  }
+  
+  
+}

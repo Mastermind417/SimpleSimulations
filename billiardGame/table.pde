@@ -45,14 +45,14 @@ void createEdges(){
   
   int hR = holeRadius;
   
-  edges.add(new Edge( hR,0,width/2-2*hR,hR/2,0,0,200,200 ));
-  edges.add(new Edge( width/2+hR,0,width/2-2*hR,hR/2, 0,0,200,200 ));
+  edges.add(new Edge( hR,0,width/2-2*hR,hR,0,0,200,200 ));
+  edges.add(new Edge( width/2+hR,0,width/2-2*hR,hR, 0,0,200,200 ));
   
-  edges.add(new Edge( 0,hR,hR/2,height-2*hR,0,200,200,0 ));
-  edges.add(new Edge( width-hR/2,hR,hR/2,height-2*hR,200,0,0,200 ));
+  edges.add(new Edge( 0,hR,hR,height-2*hR,0,200,200,0 ));
+  edges.add(new Edge( width-hR/2,hR,hR,height-2*hR,200,0,0,200 ));
   
-  edges.add(new Edge( hR,height-hR/2,width/2-2*hR,hR/2,200,200,0,0 ));
-  edges.add(new Edge( width/2+hR,height-hR/2,width/2-2*hR,hR/2, 200,200,0,0 ));
+  edges.add(new Edge( hR,height-hR/2,width/2-2*hR,hR,200,200,0,0 ));
+  edges.add(new Edge( width/2+hR,height-hR/2,width/2-2*hR,hR, 200,200,0,0 ));
   
 }
 
@@ -67,12 +67,12 @@ void createHoles(){
   
   int hD = holeDiameter;
   
-  holes.add(new Hole( 0,0,hD ));
-  holes.add(new Hole( width,0,hD ));
-  holes.add(new Hole( 0,height,hD ));
-  holes.add(new Hole( width,height,hD ));
-  holes.add(new Hole( width/2,0,hD ));
-  holes.add(new Hole( width/2,height,hD ));
+  holes.add(new Hole( 0+hD/3,0+hD/3,hD ));
+  holes.add(new Hole( width-hD/3,0+hD/3,hD ));
+  holes.add(new Hole( 0+hD/3,height-hD/3,hD ));
+  holes.add(new Hole( width-hD/3,height-hD/3,hD ));
+  holes.add(new Hole( width/2,0+hD/3,hD ));
+  holes.add(new Hole( width/2,height-hD/3,hD ));
 }
 
 void drawHoles(){
@@ -108,8 +108,13 @@ void initialiseBalls(){
   createBallAtPosition(rightMark.x + 4*dist, rightMark.y - 4*dist/2,yellow);
   createBallAtPosition(rightMark.x + 4*dist, rightMark.y + 4*dist/2,red);
   
-  createBallAtPosition(leftMark.x, leftMark.y, white);
+  initialiseWhiteBall();
   
+}
+
+void initialiseWhiteBall(){
+  PVector leftMark = new PVector(1*width/4,height/2);
+  createBallAtPosition(leftMark.x, leftMark.y, white);
 }
 
 void createBallAtPosition(float posx, float posy, int[] colour){
@@ -123,7 +128,7 @@ boolean whiteBallFound(PVector mouse){
   float r = whiteBall.radius;
   PVector pos = whiteBall.position;
   
-  if(mouse.x < pos.x + r && mouse.x > pos.x - r && mouse.y < pos.y + r && mouse.y > pos.y - r) return true;
+  if(mouse.x <= pos.x + r && mouse.x >= pos.x - r && mouse.y <= pos.y + r && mouse.y >= pos.y - r) return true;
   return false;
 }
 

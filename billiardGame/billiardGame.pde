@@ -25,7 +25,7 @@ void setup(){
   createEdges();
   createHoles();
   
-  //initialiseBalls();
+  initialiseBalls();
   
 }
 
@@ -56,8 +56,6 @@ void mouseReleased(){
 
 void keyPressed(){
     if (keyCode == 82){ // 'reset'. when 'r' is pressed particles disappear and time is set back to 0
-
-    
     setup();
   }
 }

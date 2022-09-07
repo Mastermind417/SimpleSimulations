@@ -33,11 +33,9 @@ void collisionBetweenParticlesAndHoles(){
     Particle p = particles.get(i);
     collideWithHole(p);
     if ( p.hasEnteredHole ) {
-      //if(p.colour == white) initialiseWhiteBall();
       particles.remove(i);
+      if(p.colour == white) initialiseWhiteBall();
       
-      }
     }
   }
-
 }

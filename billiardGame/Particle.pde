@@ -37,7 +37,7 @@ class Particle{
     life = 10000;
     diameter = (int)random(30,30);
     radius = diameter/2;
-    mass = map(radius, 5,20,1,100); 
+    mass = 100; // map(radius, 5,20,1,100); 
     
     colour = colour_;
     hasEnteredHole = false;

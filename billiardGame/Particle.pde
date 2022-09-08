@@ -35,7 +35,7 @@ class Particle{
     name = "Particle" + particles.size();
     
     life = 10000;
-    diameter = (int)random(30,30);
+    diameter = 40;
     radius = diameter/2;
     mass = 100; // map(radius, 5,20,1,100); 
     
@@ -70,8 +70,8 @@ class Particle{
     // clear total force at the end
     force.mult(0);
     
-    life -= 1;
-    killParticle();
+    //life -= 1;
+    //killParticle();
   }
   
   void display(){ 

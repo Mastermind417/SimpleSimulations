@@ -6,9 +6,8 @@ ArrayList<Particle> particles;
 PVector oldMouse = new PVector(0,0,0);
 PVector newMouse = new PVector(0,0,0);
 
-int[] red = new int[]{224,36,36};
-int[] yellow = new int[]{245,235,42};
-int[] white = new int[]{255,255,255};
+
+
 
 boolean whiteBallFound = false;
 
@@ -17,6 +16,7 @@ void settings(){
 }
 
 void setup(){
+  
   particles = new ArrayList<Particle>(); 
     
   oldMouse = new PVector(0,0,0);
@@ -26,7 +26,6 @@ void setup(){
   createHoles();
   
   initialiseBalls();
-  
 }
 
 void mousePressed(){
@@ -62,7 +61,11 @@ void keyPressed(){
 
 
 void draw(){
+  // table
   background(#12C65B);
+  stroke(255);
+  line(width/4,0,width/4,height);
+  noStroke();
   
   // table edges and holes
   drawSideEdges();

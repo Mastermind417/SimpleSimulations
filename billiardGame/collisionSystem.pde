@@ -3,8 +3,12 @@
 void collide(Particle particle, Particle otherParticle){
   // check if spheres overlap and resolve contact
   if(checkCollision(particle, otherParticle)){
-    // resolve contact
-    resolveContact(particle, otherParticle);
+    
+    // resolve penetration as to simulate hard contact between the particles
+    resolvePenetration(particle, otherParticle);
+
+    // resolve collision
+    resolveCollision(particle, otherParticle);
   }
 }
 
@@ -24,7 +28,26 @@ boolean checkCollision(Particle particle, Particle otherParticle){
   return false;    
 }
 
-void resolveContact(Particle particle, Particle otherParticle){
+void resolvePenetration(Particle particle, Particle otherParticle){
+  // This is a simple penetration resolution algorithm developed by myself on paper
+  // The idea is that when particle 2 penetrates particle 1, particle 2 moves at the start of the penetration
+  
+  PVector dVec = new PVector();
+  PVector.sub(particle.position, otherParticle.position, dVec);
+  
+  float dMag = dVec.mag();
+  float radiiSum = particle.radius + otherParticle.radius;
+  
+  // if particles barely touch each other, there is no need to resolve contact
+  if(dMag == radiiSum) return;
+  
+  dVec.normalize();
+  
+  // shift second particle to the point where the particles just touch each other
+  otherParticle.position.sub(dVec.mult(radiiSum-dMag));
+}
+
+void resolveCollision(Particle particle, Particle otherParticle){
   // this is the algorithm implemented: 
   //from https://studiofreya.com/3d-math-and-physics/simple-sphere-sphere-collision-detection-and-collision-response/
   
@@ -63,37 +86,49 @@ void resolveContact(Particle particle, Particle otherParticle){
   otherParticle.velocity.add(v2y); 
 }
 
+//void simulateHardContact(Particle particles, Particle otherParticle){
+  
+//}
+
 void collideWithEdges(Particle particle){
-  float yminus = particle.position.y - particle.radius;
-  float yplus = particle.position.y + particle.radius;
-  float xminus = particle.position.x - particle.radius;
-  float xplus = particle.position.x + particle.radius;
-  
-  
-  // collision detection and resolution(bounces off the edge)
+  float yTop = particle.position.y - particle.radius;
+  float yBottom = particle.position.y + particle.radius;
+  float xLeft = particle.position.x - particle.radius;
+  float xRight = particle.position.x + particle.radius;
+   
+  // correction for curved edge piece
+  float cF = holeRadius/3;
+   
+  // collision detection, penetration resolution and contact resolution(bounces off the edge)
   // top edges
-  if(yminus <= edges.get(0).position.y + edges.get(0).size.y && xplus >= edges.get(0).position.x && xminus <= edges.get(0).position.x + edges.get(0).size.x){
+  if(yTop <= edges.get(0).position.y + edges.get(0).size.y && xRight >= edges.get(0).position.x + cF && xLeft <= edges.get(0).position.x + edges.get(0).size.x - cF){
     
+    particle.position.y -= yTop - (edges.get(0).position.y + edges.get(0).size.y);
     particle.velocity.y *= -1;
   }
-  else if(yminus <= edges.get(1).position.y + edges.get(1).size.y && xplus >= edges.get(1).position.x && xminus <= edges.get(1).position.x + edges.get(1).size.x){
+  else if(yTop <= edges.get(1).position.y + edges.get(1).size.y && xRight >= edges.get(1).position.x && xLeft + cF <= edges.get(1).position.x + edges.get(1).size.x - cF){
+    particle.position.y -= yTop - (edges.get(1).position.y + edges.get(1).size.y);
     particle.velocity.y *= -1;
   }
   
   // bottom edges
-  else if(yplus >= edges.get(4).position.y && xplus >= edges.get(4).position.x && xminus <= edges.get(4).position.x + edges.get(4).size.x){
+  else if(yBottom >= edges.get(4).position.y && xRight >= edges.get(4).position.x && xLeft + cF <= edges.get(4).position.x + edges.get(4).size.x - cF){
+    particle.position.y -= yBottom - edges.get(4).position.y;
     particle.velocity.y *= -1;
   }
-  else if(yplus >= edges.get(5).position.y && xplus >= edges.get(5).position.x && xminus <= edges.get(5).position.x + edges.get(5).size.x){
+  else if(yBottom >= edges.get(5).position.y && xRight >= edges.get(5).position.x + cF && xLeft <= edges.get(5).position.x + edges.get(5).size.x - cF){
+    particle.position.y -= yBottom - edges.get(5).position.y;
     particle.velocity.y *= -1;
   }
   
   // side edges
-  else if(xminus <= edges.get(2).position.x + edges.get(2).size.x && yplus >= edges.get(2).position.y && yminus <= edges.get(2).position.y + edges.get(2).size.y){
+  else if(xLeft <= edges.get(2).position.x + edges.get(2).size.x && yBottom >= edges.get(2).position.y + cF && yTop <= edges.get(2).position.y + edges.get(2).size.y - cF){
+    particle.position.x -= xLeft - (edges.get(2).position.x + edges.get(2).size.x);
     particle.velocity.x *= -1;
   }
   
-  else if(xplus >= edges.get(3).position.x && yplus >= edges.get(3).position.y && yminus <= edges.get(3).position.y + edges.get(3).size.y){
+  else if(xRight >= edges.get(3).position.x && yBottom >= edges.get(3).position.y + cF && yTop <= edges.get(3).position.y + edges.get(3).size.y - cF){
+    particle.position.x -= xRight - (edges.get(3).position.x);
     particle.velocity.x *= -1;
   }
 

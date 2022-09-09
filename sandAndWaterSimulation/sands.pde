@@ -10,6 +10,9 @@ void createSand(){
 }
 
 void showSand(){
+  strokeWeight(1);
+  noStroke();
+  
   if(sands == null || sands.size() == 0) return;
   
   for(Sand s : sands){

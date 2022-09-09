@@ -12,7 +12,7 @@ class Sand{
     position = new PVector(x,y);
     colour = gold;
     shouldStopMoving = false;
-    name = new String("sand" + sands.size());
+    name = new String("sand" + sand.size());
   }
   
   void update(){

@@ -7,6 +7,8 @@ int bColour[] = {255, 255, 255};
 
 ArrayList<PVector> occupiedPixels;
 
+boolean sandOn;
+
 void settings(){
   size(640,640);  
 }
@@ -21,8 +23,12 @@ void draw(){
   
   //showGrid();
   showSand();
+  showWater();
   
-  if(mousePressed)createSand();
+  if(mousePressed){
+    createSand();
+    createWater();
+  }
   
 }
 
@@ -47,13 +53,16 @@ void showGrid(){
 void keyPressed(){
   // 'r' is pressed
   if(keyCode == 82) reset();
+  if(keyCode == 83) sandOn = !sandOn;
 }
 
 void reset(){
   // this is what happens at scren initialisation
   background(bColour[0]);
+  sandOn = true;
   
-  sands = new ArrayList<Sand>();
+  sand = new ArrayList<Sand>();
+  water = new ArrayList<Water>();
   occupiedPixels = new ArrayList<PVector>();
 
 }

@@ -14,7 +14,8 @@ class Water{
     position = new PVector(x,y);
     colour = blue;
     name = new String("sand" + sand.size());
-    direction = "left";
+    //direction = "left";
+    generateRandomDirection();
     
     shouldStopMoving = false;
     numberOfTimesSideWasHit = 0;
@@ -90,6 +91,7 @@ class Water{
     for(PVector pixel : occupiedPixels){
       boolean hitsOccPixel = pos.x == pixel.x && pos.y == pixel.y; 
       if(hitsOccPixel) {
+        //stopParticleAtPosition(pos);
         changeDirection();
         numberOfTimesSideWasHit++;
         return false;
@@ -103,11 +105,12 @@ class Water{
     
     boolean hitsEdge = pos.x == 0-size || pos.x == width+size;
     if(hitsEdge) {
-      changeDirection();
-      occupiedPixels.add(pos);
+      stopParticleAtPosition(pos);
+      //changeDirection();
+      //occupiedPixels.add(pos);
     }
     
-    boolean waterParticleExhausted = numberOfTimesSideWasHit >= 100;
+    boolean waterParticleExhausted = numberOfTimesSideWasHit >= 5;
     if(waterParticleExhausted) stopParticleAtPosition(pos);
     
     position = pos;
@@ -145,7 +148,7 @@ class Water{
   }
   
   void generateRandomDirection(){
-    float r = random(1);
+    float r = random(0,1);
     if(r < 0.5) direction = "left";
     direction = "right";
   }

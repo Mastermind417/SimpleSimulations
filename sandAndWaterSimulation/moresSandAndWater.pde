@@ -60,8 +60,16 @@ void showWater(){
   
   if(water == null || water.size() == 0) return;
   
-  for(Water w : water){
+  
+  for(int i = water.size()-1;i>=0;i--){
+    Water w = water.get(i);  
     w.display(w.colour);
     w.update();
+
   }
+  
+  //for(Water w : water){
+  //  w.display(w.colour);
+  //  w.update();
+  //}
 }

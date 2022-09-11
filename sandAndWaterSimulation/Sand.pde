@@ -35,10 +35,15 @@ class Sand{
     }
     
     // piling algorithm
-    if( checkPositionIsUnoccupiedAndUpdate(dPos) );
-    else if( checkPositionIsUnoccupiedAndUpdate(firstPos) );
-    else if( checkPositionIsUnoccupiedAndUpdate(secondPos) );
+    
+    PVector pos = null;
+    
+    if( checkPosition(dPos) ) pos = dPos;
+    else if( checkPosition(firstPos) ) pos = firstPos;
+    else if( checkPosition(secondPos) ) pos = secondPos;
     else stopParticleAtPosition(position);
+    
+    updatePosition(pos);
   }
   
   void display(int[] colour){
@@ -46,17 +51,23 @@ class Sand{
     rect(position.x, position.y,size,size);   
   }
   
-  boolean checkPositionIsUnoccupiedAndUpdate(PVector pos){
+  boolean checkPosition(PVector pos){
     for(Pixel p : occupiedPixels){
       PVector pixelPos = p.position;
       if(pos.y == pixelPos.y && pos.x == pixelPos.x) return false;
     }
+    return true;
+  }
+  
+  void updatePosition(PVector pos){
+    if(pos == null) return;
+    
+    boolean hitsEdge = pos.x == 0+size || pos.x == width-2*size;
     
     boolean hitsBottom = pos.y == height-size; 
-    if(hitsBottom) stopParticleAtPosition(pos);
+    if(hitsBottom || hitsEdge) stopParticleAtPosition(pos);
     
     position = pos;
-    return true;
   }
   
   void stopParticleAtPosition(PVector pos){

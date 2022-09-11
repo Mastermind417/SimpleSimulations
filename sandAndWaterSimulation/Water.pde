@@ -11,14 +11,20 @@ class Water{
   boolean shouldStopMoving;
   int numberOfTimesSideWasHit;
   
+  boolean directionFlipped;
+  
   Water(int x, int y){
     position = new PVector(x,y);
     colour = blue;
+    //colour = new int[]{(int)random(0,255), (int)random(0,255), (int)random(0,255)};
     name = new String("water" + water.size());
+    //direction = "left";
     assignRandomDirection();
     
     shouldStopMoving = false;
     numberOfTimesSideWasHit = 0;
+    directionFlipped = false;
+    
   }
   
   void update(){
@@ -37,18 +43,15 @@ class Water{
     float r = random(0,1);
     PVector firstPosDown = dlPos;
     PVector secondPosDown = drPos;
-    //PVector posSide = lPos;
-    //PVector posOppSide = rPos;
-    //direction = "left";
     if(r < 0.5){
       firstPosDown= drPos;
       secondPosDown = dlPos;
-      ////posSide = rPos;
-      ////posOppSide = lPos;
-      //direction = "right";
     }
     
     //if(direction == null) assignRandomDirection();
+    
+    // direction can be assigned towards where there is 'less' water on the same level
+    assignDirection();
     
     PVector[] posSides = new PVector[]{lPos, rPos};
     PVector posSide = findAppropriatePosSide(posSides, true);
@@ -56,16 +59,24 @@ class Water{
     
     // piling algorithm
     // down
-    if( checkDownPositionIsUnoccupiedAndUpdate(dPos) ); 
-    else if( checkDownPositionIsUnoccupiedAndUpdate(firstPosDown) );
-    else if( checkDownPositionIsUnoccupiedAndUpdate(secondPosDown) );
+    PVector pos = null; //<>//
     
-    // side
-    else if ( checkSidePositionIsUnoccupiedAndUpdate(posSide) );
-    else if ( checkSidePositionIsUnoccupiedAndUpdate(posOppSide) );
-       
-    // stationary
+    if( checkPosition(dPos) ) pos = dPos;
+    else if( checkPosition(firstPosDown) ) {
+      pos = firstPosDown;
+    }
+    else if( checkPosition(secondPosDown) ) {
+      pos = secondPosDown;
+    }
+    else if( checkPositionForSide(posSide) ) {
+      pos = posSide;
+      //findDirection();
+    }
+    //else if( checkPositionForSide(posOppSide) && directionFlipped ) pos = posOppSide;
+    
     else stopParticleAtPosition(position);
+    
+    updatePosition(pos);
   }
   
   void display(int[] colour){
@@ -73,54 +84,39 @@ class Water{
     rect(position.x, position.y,size,size);   
   }
   
-  boolean checkDownPositionIsUnoccupiedAndUpdate(PVector pos){
-    for(Pixel p : occupiedPixels){
+  boolean checkPosition(PVector pos){
+    for(int i = occupiedPixels.size() -1 ; i >= 0; i--){
+      Pixel p = occupiedPixels.get(i);
       PVector pixelPos = p.position;
       if(pos.y == pixelPos.y && pos.x == pixelPos.x) return false;
     }
-    
-    //occupiedPixels.remove(new Pixel(position, type));
-    boolean hitsBottom = pos.y == height-size; 
-    if(hitsBottom) stopParticleAtPosition(pos);
-    
-    position = pos;
-    //occupiedPixels.add(position);
     return true;
   }
   
-  boolean checkSidePositionIsUnoccupiedAndUpdate(PVector pos){
-    
-    for(Pixel p : occupiedPixels){
+  boolean checkPositionForSide(PVector pos){
+    for(int i = occupiedPixels.size() -1 ; i >= 0; i--){
+      Pixel p = occupiedPixels.get(i);
       PVector pixelPos = p.position;
-      boolean hitsOccPixel = pos.x == pixelPos.x && pos.y == pixelPos.y; 
-      if(hitsOccPixel) {
-        stopParticleAtPosition(pos);
-        //changeDirection();
-        //numberOfTimesSideWasHit++;
+      if(pos.y == pixelPos.y && pos.x == pixelPos.x) {
+        directionFlipped = true;
+        ++numberOfTimesSideWasHit;
         return false;
       }
     }
-    
-    //occupiedPixels.remove(new Pixel(position, type));
-    
-    //boolean hitsBottom = pos.y == height-size; 
-    //if(hitsBottom) stopParticleAtPosition(pos);
-    
-    boolean hitsEdge = pos.x == 0 || pos.x == width-size;
-    if(hitsEdge) {
-      stopParticleAtPosition(pos);
-      //changeDirection();
-      //occupiedPixels.add(pos);
-    }
-    
-    boolean waterParticleExhausted = numberOfTimesSideWasHit >= 5;
-    if(waterParticleExhausted) stopParticleAtPosition(pos);
-    
-    position = pos;
-    //occupiedPixels.add(position);
-    
     return true;
-
+  }
+  
+  void updatePosition(PVector newPos){
+    if(newPos == null) return;
+    
+    alignDirection(newPos);
+    
+    boolean hitsEdge = newPos.x == 0+size || newPos.x == width-2*size;
+    boolean hitsBottom = newPos.y == height-size; 
+    
+    if(hitsBottom || hitsEdge) stopParticleAtPosition(newPos);
+    
+    position = newPos;
   }
   
   void stopParticleAtPosition(PVector pos){
@@ -158,4 +154,47 @@ class Water{
     if(r < 0.5) direction = "left";
     else direction = "right";
   }
+  
+  void alignDirection(PVector newPos){
+    if(newPos.x > position.x) direction = "right";
+    else if ((newPos.x < position.x)) direction = "left";
+  }
+  
+  void assignDirection(){
+    // this function will count for a pixel whether the water particles to the left of the given pixel and to the right until it hits a sand particle
+    
+    float posx = position.x;
+    
+    // count of water left and right until closest sand particle
+    int waterCountToLeft = 0;
+    int waterCountToRight = 0;
+    
+    // sand pixels closest to position
+    float pL = 0;
+    float pR = width;    
+    
+    // find sand pixel closest from the left and to closest from the right
+    for(Pixel p : occupiedPixels){
+      float pixPosx = p.position.x;
+      if(p.type != "sand" && pixPosx > pL && pixPosx < posx){
+        pL = pixPosx;
+      }
+      
+      else if(p.type != "sand" && pixPosx < pR && pixPosx > posx){
+        pR = pixPosx;
+      }
+    } 
+     
+     // count the water particles from position to pL and pR respectively    
+     for(Pixel p : occupiedPixels){
+       float pixPosx = p.position.x;
+       
+       if(p.type == "water" && pixPosx > pL && pixPosx < posx){
+         ++waterCountToLeft;
+       }
+       else if(p.type == "water" && pixPosx < pR && pixPosx > posx){
+         ++waterCountToRight;
+       }
+      }
+    }
 }

@@ -1,7 +1,7 @@
 int w = 1000;
 int h = 800;
 
-int gridSpacing = 20;
+int gridSpacing = 10;
 
 int bColour[] = {255, 255, 255};
 
@@ -19,13 +19,13 @@ void setup(){
   reset();
   logger = createWriter("logger.txt"); 
 
-  //frameRate(10);
+  //frameRate(5);
 }
 
 void draw(){
   background(bColour[0]);
   
-  showGrid();
+  //showGrid();
   showSand();
   showWater();
   

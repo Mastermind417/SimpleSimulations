@@ -5,6 +5,7 @@ class Sand{
   int[] colour;
   String name;
   int size = gridSpacing;
+  String type = "sand";
   
   boolean shouldStopMoving;
   
@@ -46,8 +47,9 @@ class Sand{
   }
   
   boolean checkPositionIsUnoccupiedAndUpdate(PVector pos){
-    for(PVector pixel : occupiedPixels){
-      if(pos.y == pixel.y && pos.x == pixel.x) return false;
+    for(Pixel p : occupiedPixels){
+      PVector pixelPos = p.position;
+      if(pos.y == pixelPos.y && pos.x == pixelPos.x) return false;
     }
     
     boolean hitsBottom = pos.y == height-size; 
@@ -59,7 +61,7 @@ class Sand{
   
   void stopParticleAtPosition(PVector pos){
     shouldStopMoving = true;
-    occupiedPixels.add(pos);
+    occupiedPixels.add(new Pixel(pos, type, name));
   }
 
 }

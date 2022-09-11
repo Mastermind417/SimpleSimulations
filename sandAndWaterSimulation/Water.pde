@@ -6,6 +6,7 @@ class Water{
   String name;
   int size = gridSpacing;
   String direction;
+  String type = "water";
   
   boolean shouldStopMoving;
   int numberOfTimesSideWasHit;
@@ -13,9 +14,8 @@ class Water{
   Water(int x, int y){
     position = new PVector(x,y);
     colour = blue;
-    name = new String("sand" + sand.size());
-    //direction = "left";
-    generateRandomDirection();
+    name = new String("water" + water.size());
+    assignRandomDirection();
     
     shouldStopMoving = false;
     numberOfTimesSideWasHit = 0;
@@ -37,22 +37,22 @@ class Water{
     float r = random(0,1);
     PVector firstPosDown = dlPos;
     PVector secondPosDown = drPos;
-    PVector posSide = lPos;
-    PVector posOppSide = rPos;
-    direction = "left";
+    //PVector posSide = lPos;
+    //PVector posOppSide = rPos;
+    //direction = "left";
     if(r < 0.5){
       firstPosDown= drPos;
       secondPosDown = dlPos;
-      posSide = rPos;
-      posOppSide = lPos;
-      direction = "right";
+      ////posSide = rPos;
+      ////posOppSide = lPos;
+      //direction = "right";
     }
     
-    //generateRandomDirection();
+    //if(direction == null) assignRandomDirection();
     
-    //PVector[] posSides = new PVector[]{lPos, rPos};
-    //PVector posSide = findAppropriatePosSide(posSides, true);
-    //PVector posOppSide = findAppropriatePosSide(posSides, false);
+    PVector[] posSides = new PVector[]{lPos, rPos};
+    PVector posSide = findAppropriatePosSide(posSides, true);
+    PVector posOppSide = findAppropriatePosSide(posSides, false);
     
     // piling algorithm
     // down
@@ -74,36 +74,39 @@ class Water{
   }
   
   boolean checkDownPositionIsUnoccupiedAndUpdate(PVector pos){
-    for(PVector pixel : occupiedPixels){
-      if(pos.y == pixel.y && pos.x == pixel.x) return false;
+    for(Pixel p : occupiedPixels){
+      PVector pixelPos = p.position;
+      if(pos.y == pixelPos.y && pos.x == pixelPos.x) return false;
     }
     
-    occupiedPixels.remove(position);
+    //occupiedPixels.remove(new Pixel(position, type));
     boolean hitsBottom = pos.y == height-size; 
     if(hitsBottom) stopParticleAtPosition(pos);
     
     position = pos;
-    occupiedPixels.add(position);
+    //occupiedPixels.add(position);
     return true;
   }
   
   boolean checkSidePositionIsUnoccupiedAndUpdate(PVector pos){
-    for(PVector pixel : occupiedPixels){
-      boolean hitsOccPixel = pos.x == pixel.x && pos.y == pixel.y; 
+    
+    for(Pixel p : occupiedPixels){
+      PVector pixelPos = p.position;
+      boolean hitsOccPixel = pos.x == pixelPos.x && pos.y == pixelPos.y; 
       if(hitsOccPixel) {
-        //stopParticleAtPosition(pos);
-        changeDirection();
-        numberOfTimesSideWasHit++;
+        stopParticleAtPosition(pos);
+        //changeDirection();
+        //numberOfTimesSideWasHit++;
         return false;
       }
     }
     
-    occupiedPixels.remove(position);
+    //occupiedPixels.remove(new Pixel(position, type));
     
-    boolean hitsBottom = pos.y == height-size; 
-    if(hitsBottom) stopParticleAtPosition(pos);
+    //boolean hitsBottom = pos.y == height-size; 
+    //if(hitsBottom) stopParticleAtPosition(pos);
     
-    boolean hitsEdge = pos.x == 0-size || pos.x == width+size;
+    boolean hitsEdge = pos.x == 0 || pos.x == width-size;
     if(hitsEdge) {
       stopParticleAtPosition(pos);
       //changeDirection();
@@ -114,7 +117,7 @@ class Water{
     if(waterParticleExhausted) stopParticleAtPosition(pos);
     
     position = pos;
-    occupiedPixels.add(position);
+    //occupiedPixels.add(position);
     
     return true;
 
@@ -122,7 +125,10 @@ class Water{
   
   void stopParticleAtPosition(PVector pos){
     shouldStopMoving = true;
-    occupiedPixels.add(pos);
+    occupiedPixels.add(new Pixel(pos, type, name));
+    
+    Pixel lastOP = occupiedPixels.get(occupiedPixels.size()-1);
+    lastOP.log();
   }
   
   PVector findAppropriatePosSide(PVector[] posSides, boolean sameDir){
@@ -131,7 +137,7 @@ class Water{
     // resolve whether give posSide in same direction or opposite
     int nl = 0;
     int nr = 1;  
-    if(!sameDir){
+    if(!sameDir){ // switch
       nl = 1;
       nr = 0;
     }
@@ -147,9 +153,9 @@ class Water{
     else direction = "left";
   }
   
-  void generateRandomDirection(){
+  void assignRandomDirection(){
     float r = random(0,1);
     if(r < 0.5) direction = "left";
-    direction = "right";
+    else direction = "right";
   }
 }

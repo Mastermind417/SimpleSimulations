@@ -1,6 +1,25 @@
 ArrayList<Sand> sand; 
 ArrayList<Water> water;
 
+ArrayList<Pixel> occupiedPixels;
+
+class Pixel{
+  String type;
+  PVector position;
+  String particleName;
+  
+  Pixel(PVector pos, String type_, String name){
+    type = type_;
+    position = pos;
+    particleName = name; 
+  }
+  
+  void log(){
+    logger.println("Pixel occupied at: (" + position.x + ", " + position.y + ") by: " + particleName + " [ " + time + " ]");
+    logger.flush();
+  }
+}
+
 void createSand(){
   if(!sandOn) return;
   

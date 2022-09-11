@@ -1,27 +1,31 @@
 int w = 1000;
-int h = 1000;
+int h = 800;
 
-int gridSpacing = 5;
+int gridSpacing = 20;
 
 int bColour[] = {255, 255, 255};
 
-ArrayList<PVector> occupiedPixels;
-
 boolean sandOn;
 
+PrintWriter logger;
+
+int time;
+
 void settings(){
-  size(640,640);  
+  size(w,h);  
 }
 
 void setup(){
   reset();
+  logger = createWriter("logger.txt"); 
+
   //frameRate(10);
 }
 
 void draw(){
   background(bColour[0]);
   
-  //showGrid();
+  showGrid();
   showSand();
   showWater();
   
@@ -30,6 +34,7 @@ void draw(){
     createWater();
   }
   
+  ++time;
 }
 
 void mousePressed(){
@@ -57,12 +62,13 @@ void keyPressed(){
 }
 
 void reset(){
-  // this is what happens at scren initialisation
+  // this is what happens at screen initialisation
   background(bColour[0]);
   sandOn = true;
   
   sand = new ArrayList<Sand>();
   water = new ArrayList<Water>();
-  occupiedPixels = new ArrayList<PVector>();
-
+  occupiedPixels = new ArrayList<Pixel>();
+  
+  time = 0;
 }

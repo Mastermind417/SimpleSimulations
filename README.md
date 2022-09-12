@@ -24,4 +24,8 @@ There is software implementation to either choose the particles to stay in a box
 This project is in development phase and is built upon an older version of the 'particlesInABox' Particle class. The goal is to develop it into a simplified 2D platform game, like `Super Mario`.
 
 ## sandAndWaterSimulation
-This is a sand and water simulation. It is based on 2D cellular automata with simple rules to simulate pixel building of sand and water respectively. The pilling algorithms were developed by myself using nothing but intuition and a developing 'bottom-up' approach. The algorithms can further be developed to produce, for example by producing fire, and make water-sand interactions more realistic. 
+This is a sand and water simulation. 
+
+<img src="images/sandAndWaterSimulation_ShowingBothWaterAndSand.png" width=600>
+
+It is based on 2D cellular automata with simple rules to simulate pixel building of sand and water respectively. The pilling algorithms were developed by myself using nothing but intuition and a developing 'bottom-up' approach. The algorithms can further be developed to produce, for example by producing fire, and make water-sand interactions more realistic. 

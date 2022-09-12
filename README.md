@@ -3,6 +3,8 @@
 ## billiardGame
 This is a two-dimensional simulation of the billiard game. 
 
+![](images/billiardGame_InitialPosition.png)
+
 The balls used were produced from the `Particle` class from the `particlesInABox` project. A delicate collision system was developed to handle the interaction between balls and balls, balls and edges, balls and holes. Additionally, to avoid the balls crashing into each other and the edges, contact resolution method were developed to extradicate this.
  
 ## doublePendulum

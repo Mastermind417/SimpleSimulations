@@ -1,49 +1,30 @@
-import toxi.audio.*;
-//import toxi.color.*;
-//import toxi.color.theory.*;
-import toxi.data.csv.*;
-import toxi.data.feeds.*;
-import toxi.data.feeds.util.*;
-import toxi.doap.*;
-import toxi.geom.*;
-import toxi.geom.mesh.*;
-import toxi.geom.mesh.subdiv.*;
-import toxi.geom.mesh2d.*;
-import toxi.geom.nurbs.*;
-import toxi.image.util.*;
-import toxi.math.*;
-import toxi.math.conversion.*;
-import toxi.math.noise.*;
-import toxi.math.waves.*;
-import toxi.music.*;
-import toxi.music.scale.*;
-import toxi.net.*;
-import toxi.newmesh.*;
-import toxi.nio.*;
-import toxi.physics2d.*;
-import toxi.physics2d.behaviors.*;
-import toxi.physics2d.constraints.*;
-import toxi.physics3d.*;
-import toxi.physics3d.behaviors.*;
-import toxi.physics3d.constraints.*;
-import toxi.processing.*;
-import toxi.sim.automata.*;
-import toxi.sim.dla.*;
-import toxi.sim.erosion.*;
-import toxi.sim.fluids.*;
-import toxi.sim.grayscott.*;
-import toxi.util.*;
-import toxi.util.datatypes.*;
-import toxi.util.events.*;
-import toxi.volume.*;
-
 int w = 640;
 int h = 640;
 
+PVector oldMouse;
+PVector newMouse;
+
+boolean lineShouldAppear;
+Particle particleSelected;
+
 ArrayList<Particle> particles;
 
-
 //VerletSpring2D spring = new VerletSpring2D(
+
+void settings(){
+  size(w, h); 
+}
+
+void setup(){
+  reset();
+}
+
+void draw(){
+  background(255);
+    
+  drawParticleLine();
+  displayParticles();
+}
 
 void keyPressed(){
   // 67 is key 'c' for create
@@ -53,14 +34,13 @@ void keyPressed(){
       return;
   } 
   
-  // 67 is key 'd' for delete
-  if(keyCode == 68) reset();
+  // 82 is key 'r' for reset
+  if(keyCode == 82) reset();
 }
 
 void mousePressed(){
-  //PVector mouse = new PVector(mouseX, mouseY);
+  if(lineShouldAppear) return;
   
-  Particle pSelect = null;
   for(Particle p : particles){
     float leftBoundary = p.position.x - p.radius;
     float rightBoundary = p.position.x + p.radius;
@@ -68,35 +48,64 @@ void mousePressed(){
     float downBoundary = p.position.y + p.radius;
     
     if(mouseX >= leftBoundary && mouseX <= rightBoundary && mouseY >= upBoundary && mouseY <= downBoundary){
-        pSelect = p;
+        particleSelected = p;
+        oldMouse.set(p.position.x, p.position.y);
+        newMouse.set(mouseX, mouseY);
+        lineShouldAppear = true;
         break;
     }
   }
 }
 
-void settings(){
-  size(w, h);
-  
+void mouseDragged(){
+  newMouse.set(mouseX, mouseY);
 }
 
-void setup(){
-  reset();
+void mouseReleased(){
+  if(!lineShouldAppear) return;
+  
+  moveParticle(oldMouse.x - newMouse.x, oldMouse.y - newMouse.y);
+  
+  lineShouldAppear = false;
+
+  newMouse.set(new PVector(0,0));
+  oldMouse.set(new PVector(0,0));  
 }
 
-void draw(){
-  background(255);
+void reset(){
+  particles = new ArrayList<Particle>();
   
-  displayParticles();
+  oldMouse = new PVector(0,0);
+  newMouse = new PVector(0,0);
+  
+  lineShouldAppear = false;
+  particleSelected = null;
 }
 
 void displayParticles(){
   if(particles.size() == 0 || particles == null) return;
   
   for(Particle p : particles){
-    p.display();
+      p.display();
+      p.move();
   }
 }
 
-void reset(){
-  particles = new ArrayList<Particle>();
+void moveParticle(float vx, float vy){
+  if(particles.size() == 0 || particles == null) return;
+  
+  for(Particle p : particles){
+    if(p.name == particleSelected.name){
+      p.setVelocity(vx, vy);
+      break;
+    }
+  }
+}
+
+void drawParticleLine(){
+  if(!lineShouldAppear) return;
+  
+  fill(240, 39, 52);
+  strokeWeight(1);
+  line(oldMouse.x, oldMouse.y, newMouse.x, newMouse.y);
 }

@@ -18,14 +18,14 @@ class Flag{
   }
   
   void createFlag(){
-    float dx = len/nCols;
-    float dy = (abs(top.y - bottom.y))/nRows;
+    int dx = int(len/nCols);
+    int dy = int((abs(top.y - bottom.y))/nRows);
     for(int i = 0; i< nRows; i++){
       for(int j = 0; j < nCols; j++){
         // x position
-        float x = top.x + j*dx;
+        int x = (int)top.x + j*dx;
         // y position
-        float y = top.y + i*dy;
+        int y = (int)top.y + i*dy;
         
         // create particle at position (x,y) and locks in place the (0,0) and (0,nRows) particle
         addParticle(x,y, j == 0 && (i == 0 || i == nRows-1));

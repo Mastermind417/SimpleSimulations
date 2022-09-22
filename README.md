@@ -32,3 +32,6 @@ It is based on 2D cellular automata with simple rules to simulate pixel building
 
 ## springDemo
 This is an ongoing spring demo using the toxiclibs library.
+
+## wavingFlag
+This is an ongoing demo of a waving flag using the toxiclibs library and is built using tools from the springDemo. A texture can be applied to the "flag" later and wind and gravity forces can be added to make the flag wave more realistic.

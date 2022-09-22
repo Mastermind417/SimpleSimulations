@@ -37,6 +37,7 @@ class Spring extends VerletSpring2D{
   
   void display(){
     //noStroke();
+    //noFill();
     stroke(0);
     strokeWeight(2);
     line(a.x, a.y, b.x, b.y);

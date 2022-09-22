@@ -15,14 +15,17 @@ Flag flag;
 PVector gravity;
 PVector wind;
 
+PImage img;
+
 void settings(){
-  size(w,h);
+  size(w,h, P2D);
 }
 
 void setup(){
   reset();
-
   createFlag();
+  
+  img = loadImage("frog.jpg");
 }
 
 void draw(){
@@ -35,9 +38,8 @@ void draw(){
   applyForcesOnParticles();
   flag.display();
   
-  //particles.get(flag.nCols-1).move(2, -2);
-  //particles.get(particles.size()-1).move(2, 2);
   
+  applyTextureOnFlag();
   
   
 

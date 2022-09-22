@@ -1,6 +1,7 @@
 import toxi.physics2d.*;
 import toxi.physics2d.behaviors.*;
 import toxi.physics2d.constraints.*;
+import toxi.geom.*;
 
 VerletPhysics2D physics;
 
@@ -12,8 +13,11 @@ PVector poleBottom = new PVector(w/20, h);
 
 Flag flag;
 
-PVector gravity;
-PVector wind;
+Vec2D gravity;
+Vec2D wind;
+
+int particleRows = 8;
+int particleCols = 20;
 
 PImage img;
 
@@ -25,7 +29,7 @@ void setup(){
   reset();
   createFlag();
   
-  img = loadImage("frog.jpg");
+  img = loadImage("michalis.jpg");
 }
 
 void draw(){
@@ -39,7 +43,7 @@ void draw(){
   flag.display();
   
   
-  applyTextureOnFlag();
+  //applyTextureOnFlag();
   
   
 

@@ -1,8 +1,9 @@
-ArrayList<Particle> particles;
+//ArrayList<Particle> particles;
+Particle[][] particles;
 
-void addParticle(int x, int y, boolean lockInPlace){
-  Particle p = new Particle(x,y);
-  particles.add(p);
+void addParticle(int i, int j, int x, int y, boolean lockInPlace){
+  Particle p = new Particle(i,j,x,y);
+  particles[i][j] = p;
   physics.addParticle(p);
   
   if(lockInPlace) p.lock();
@@ -13,39 +14,27 @@ class Particle extends VerletParticle2D{
   float radius = diameter/2;
   String name;
   PVector position;
-  PVector velocity;
-  PVector totalForce;
+
   
-  Particle(int x, int y){
+  Particle(int i, int j, int x, int y){
     super(x,y);
     position = new PVector(x,y);
-    velocity =new PVector(0,0);
-    totalForce = new PVector(0,0);
-    name = new String("Particle" + particles.size());
+    name = new String("Particle" + i + "" + j);
   }
   
   void display(){
     fill(46,75,255);
-    noStroke();
-    //stroke(0);
-    //strokeWeight(3);
+    //noStroke();
+    stroke(0);
+    strokeWeight(3);
     circle(x,y, diameter);
   }
   
-  void move(){
-    velocity.add(totalForce);
-    
+  void move(float vx, float vy){
     lock();
-    x += velocity.x;
-    y += velocity.y;
+    x += vx;
+    y += vy;
     unlock();
     
-    totalForce.mult(0);
-    velocity.mult(0);
-    
-  }
-  
-  void addForce(PVector force){
-    totalForce.add(force);  
   }
 }

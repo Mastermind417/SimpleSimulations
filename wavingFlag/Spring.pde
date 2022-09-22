@@ -1,31 +1,29 @@
 ArrayList<Spring> springs;
 
-void addHorizontalSpring(int nCols){
-  int particleSize = particles.size();
-  if(particleSize < 2 || particleSize%nCols == 1) return;
+void addHorizontalSpring(int i, int j){
+  if(i == 0) return;
   
-  Particle pLast = particles.get(particleSize-1); // last particle added
-  Particle pPrevious = particles.get(particleSize-2); // previous horizontal particles, i.e. the one to its left
+  Particle pNow = particles[i][j]; // last particle added
+  Particle pPrevious = particles[i-1][j]; // previous horizontal particle, i.e. the one to its left
   
   PVector diffVec = new PVector(); 
-  PVector.sub(pLast.position, pPrevious.position, diffVec);
+  PVector.sub(pNow.position, pPrevious.position, diffVec);
   
-  Spring spring = new Spring(pLast, pPrevious, diffVec.mag(), 1);
+  Spring spring = new Spring(pNow, pPrevious, diffVec.mag(), 1);
   springs.add(spring);
   physics.addSpring(spring);
 }
 
-void addVerticalSpring(int nCols){
-  int particleSize = particles.size();
-  if(particleSize <= nCols) return;
+void addVerticalSpring(int i, int j){
+  if(j == 0) return;
   
-  Particle pLast = particles.get(particleSize-1); // last particle added
-  Particle pPrevious = particles.get(particleSize-1-nCols); // previous vertical particles, i.e. a layer above
-  
+  Particle pNow = particles[i][j]; // last particle added
+  Particle pPrevious = particles[i][j-1]; // previous vertical particle, i.e. a layer above
+
   PVector diffVec = new PVector(); 
-  PVector.sub(pLast.position, pPrevious.position, diffVec);
+  PVector.sub(pNow.position, pPrevious.position, diffVec);
   
-  Spring spring = new Spring(pLast, pPrevious, diffVec.mag(), 1);
+  Spring spring = new Spring(pNow, pPrevious, diffVec.mag(), 1);
   springs.add(spring);
   physics.addSpring(spring);
 }

@@ -1,6 +1,6 @@
 ArrayList<Particle> particles;
 
-void addParticle(float x, float y, boolean lockInPlace){
+void addParticle(int x, int y, boolean lockInPlace){
   Particle p = new Particle(x,y);
   particles.add(p);
   physics.addParticle(p);
@@ -16,7 +16,7 @@ class Particle extends VerletParticle2D{
   PVector velocity;
   PVector totalForce;
   
-  Particle(float x, float y){
+  Particle(int x, int y){
     super(x,y);
     position = new PVector(x,y);
     velocity =new PVector(0,0);

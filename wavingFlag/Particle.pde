@@ -9,28 +9,43 @@ void addParticle(float x, float y, boolean lockInPlace){
 }
 
 class Particle extends VerletParticle2D{
-  float diameter = 10;
+  float diameter = 15;
   float radius = diameter/2;
   String name;
   PVector position;
+  PVector velocity;
+  PVector totalForce;
   
   Particle(float x, float y){
     super(x,y);
     position = new PVector(x,y);
+    velocity =new PVector(0,0);
+    totalForce = new PVector(0,0);
     name = new String("Particle" + particles.size());
   }
   
   void display(){
-    fill(203,47,76);
+    fill(46,75,255);
+    noStroke();
     //stroke(0);
     //strokeWeight(3);
     circle(x,y, diameter);
   }
   
-  void move(float vx, float vy){
+  void move(){
+    velocity.add(totalForce);
+    
     lock();
-    x += vx;
-    y += vy;
+    x += velocity.x;
+    y += velocity.y;
     unlock();
+    
+    totalForce.mult(0);
+    velocity.mult(0);
+    
+  }
+  
+  void addForce(PVector force){
+    totalForce.add(force);  
   }
 }

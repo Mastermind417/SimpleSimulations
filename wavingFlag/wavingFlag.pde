@@ -12,33 +12,33 @@ PVector poleBottom = new PVector(w/20, h);
 
 Flag flag;
 
-int on = 1;
-int time = 0;
+PVector gravity;
+PVector wind;
 
 void settings(){
   size(w,h);
 }
 
 void setup(){
-  //frameRate(2);
   reset();
 
   createFlag();
 }
 
 void draw(){
+  physics.update();
+  
   // clears screen
   background(255);
+  
   showPole();
+  applyForcesOnParticles();
   flag.display();
   
-  particles.get(flag.nCols-1).move(on*2, -2);
-  particles.get(particles.size()-1).move(on*2, 2);
+  //particles.get(flag.nCols-1).move(2, -2);
+  //particles.get(particles.size()-1).move(2, 2);
   
-  //if(time++ % 5 == 0){
-  //  on *= -1;
-  //}
   
-  physics.update();
+  
 
 }

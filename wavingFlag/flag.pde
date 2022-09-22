@@ -46,7 +46,6 @@ class Flag{
     
     for(Spring s : springs){
       s.display();
-    }
-    
+    } 
   }
 }

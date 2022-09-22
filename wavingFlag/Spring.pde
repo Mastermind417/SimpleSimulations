@@ -10,7 +10,7 @@ void addHorizontalSpring(int nCols){
   PVector diffVec = new PVector(); 
   PVector.sub(pLast.position, pPrevious.position, diffVec);
   
-  Spring spring = new Spring(pLast, pPrevious, diffVec.mag(), 0.01);
+  Spring spring = new Spring(pLast, pPrevious, diffVec.mag(), 1);
   springs.add(spring);
   physics.addSpring(spring);
 }
@@ -25,7 +25,7 @@ void addVerticalSpring(int nCols){
   PVector diffVec = new PVector(); 
   PVector.sub(pLast.position, pPrevious.position, diffVec);
   
-  Spring spring = new Spring(pLast, pPrevious, diffVec.mag(), 0.01);
+  Spring spring = new Spring(pLast, pPrevious, diffVec.mag(), 1);
   springs.add(spring);
   physics.addSpring(spring);
 }
@@ -36,8 +36,9 @@ class Spring extends VerletSpring2D{
   }
   
   void display(){
+    //noStroke();
     stroke(0);
-    //strokeWeight(2);
+    strokeWeight(2);
     line(a.x, a.y, b.x, b.y);
   }
   

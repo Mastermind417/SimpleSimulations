@@ -29,7 +29,7 @@ void setup(){
   reset();
   createFlag();
   
-  img = loadImage("michalis.jpg");
+  img = loadImage("frog.jpg");
 }
 
 void draw(){
@@ -43,7 +43,7 @@ void draw(){
   flag.display();
   
   
-  //applyTextureOnFlag();
+  applyTextureOnFlag();
   
   
 

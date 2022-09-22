@@ -1,12 +1,10 @@
 //ArrayList<Particle> particles;
 Particle[][] particles;
 
-void addParticle(int i, int j, int x, int y, boolean lockInPlace){
+void addParticle(int i, int j, int x, int y){
   Particle p = new Particle(i,j,x,y);
   particles[i][j] = p;
   physics.addParticle(p);
-  
-  if(lockInPlace) p.lock();
 }
 
 class Particle extends VerletParticle2D{
@@ -23,11 +21,10 @@ class Particle extends VerletParticle2D{
   }
   
   void display(){
-    fill(46,75,255);
-    //noStroke();
-    stroke(0);
-    strokeWeight(3);
-    circle(x,y, diameter);
+    //fill(46,75,255);
+    //stroke(0);
+    //strokeWeight(3);
+    //circle(x,y, diameter);
   }
   
   void move(float vx, float vy){

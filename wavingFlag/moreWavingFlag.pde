@@ -17,7 +17,7 @@ void showPole() {
 }
 
 void createFlag() {
-  flag = new Flag(particleRows, particleCols, 17*width/20, poleTop.x, 1.05*poleTop.y, poleTop.x, poleBottom.y/3);
+  flag = new Flag(particleRows, particleCols, 17*width/20, poleTop.x, 1.05*poleTop.y, poleTop.x, poleBottom.y);
 }
 
 void applyForcesOnParticles() {
@@ -44,9 +44,7 @@ void applyTextureOnFlag() {
   for (int j = 0; j<nRows-1; j++) {
     beginShape(TRIANGLE_STRIP);
     texture(img);
-
     for (int i = 0; i < nCols; i++) {
-
       Particle p1 = particles[i][j];
       float u1 = map(i, 0, nCols-1, 0, 1);
       float v1 = map(j, 0, nRows-1, 0, 1);
@@ -55,7 +53,6 @@ void applyTextureOnFlag() {
       Particle p2 = particles[i][j+1];
       //float u2 = map(i, 0, nCols-1, 0, 1);
       float v2 = map(j+1, 0,nRows-1, 0, 1);
-
       vertex(p2.x, p2.y, u1, v2);
     }
     endShape();

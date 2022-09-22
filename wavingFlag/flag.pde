@@ -23,12 +23,12 @@ class Flag {
     for (int j = 0; j< nRows; j++) {
       for (int i = 0; i < nCols; i++) {
         // x position
-        int x = (int)top.x + j*dx;
+        int x = (int)top.x + i*dx;
         // y position
-        int y = (int)top.y + i*dy;
+        int y = (int)top.y + j*dy;
 
         // create particle at position (x,y) and locks in place the (0,0) and (0,nRows) particle
-        addParticle(i, j, x, y, j == 0 && (i == 0 || i == nRows-1));
+        addParticle(i, j, x, y);
 
         // create spring between horizontal particles
         addHorizontalSpring(i, j);
@@ -37,11 +37,15 @@ class Flag {
         addVerticalSpring(i, j);
       }
     }
+    
+    // lock particles in place
+    particles[0][0].lock();
+    particles[0][nRows-1].lock();
   }
 
   void display() {
     for (int j = 0; j < particles[0].length; j++) {
-      for (int i = 0; i > particles.length; i++) {
+      for (int i = 0; i < particles.length; i++) {
         Particle p = particles[i][j];
         p.display();
       }

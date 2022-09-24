@@ -23,7 +23,7 @@ void addVerticalSpring(int i, int j){
   PVector diffVec = new PVector(); 
   PVector.sub(pNow.position, pPrevious.position, diffVec);
   
-  Spring spring = new Spring(pNow, pPrevious, diffVec.mag(), 1);
+  Spring spring = new Spring(pNow, pPrevious, diffVec.mag(), 1.5);
   springs.add(spring);
   physics.addSpring(spring);
 }

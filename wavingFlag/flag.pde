@@ -40,6 +40,7 @@ class Flag {
     
     // lock particles in place
     particles[0][0].lock();
+    //particles[0][nRows/2-1].lock();
     particles[0][nRows-1].lock();
   }
 

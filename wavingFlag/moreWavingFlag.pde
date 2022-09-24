@@ -21,14 +21,25 @@ void createFlag() {
 }
 
 void applyForcesOnParticles() {
+  float yOff = 0;
+  
   for (int j = 0; j<particleRows; j++) {
+    float xOff = 0;    
+    //float yWind = map(noise(yOff), 0,1,-1,0);
+    float yWind = random(-2,0);
+    if(frameCount %10 == 0) yWind = 0;
+    //float yWind = 0;
     for (int i = 0; i<particleCols; i++) {
       Particle p = particles[i][j];
-      wind.set(random(-2, 10), random(-2, 0));
+      float xWind = map(noise(yOff + frameCount), 0,1,0,3);
+      wind.set(xWind, yWind);
 
       p.addForce(gravity);
       p.addForce(wind);
+      
+      xOff += 0.01;
     }
+    yOff += 0.1;
   }
 }
 

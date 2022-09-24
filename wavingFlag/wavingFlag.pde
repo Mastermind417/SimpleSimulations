@@ -16,7 +16,7 @@ Flag flag;
 Vec2D gravity;
 Vec2D wind;
 
-int particleRows = 8;
+int particleRows = 10;
 int particleCols = 20;
 
 PImage img;
@@ -42,9 +42,5 @@ void draw(){
   applyForcesOnParticles();
   flag.display();
   
-  
   applyTextureOnFlag();
-  
-  
-
 }

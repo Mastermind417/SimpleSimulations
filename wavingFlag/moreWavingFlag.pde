@@ -24,7 +24,7 @@ void applyForcesOnParticles() {
   for (int j = 0; j<particleRows; j++) {
     for (int i = 0; i<particleCols; i++) {
       Particle p = particles[i][j];
-      wind.set(random(-0.5, 10), random(0, -1));
+      wind.set(random(-2, 10), random(-2, 0));
 
       p.addForce(gravity);
       p.addForce(wind);

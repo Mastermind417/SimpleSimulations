@@ -101,14 +101,16 @@ void collideWithBumps(Particle particle, Bump bump) {
   int dirFromCentre = bump.directionFromCentre;
   int dirOfResolution = -dirFromCentre;
   int sideLocClosestFromCentre = bump.locationClosestToCentre;
-
+  int lT = bump.lowestTip;
+  int hT = bump.highestTip;
+    
   // horizontal edges
   if (bump.horizontalBump) {
     // top edges
 
     boolean isPenetrating = ( (dirFromCentre == -1 && yTop < sideLocClosestFromCentre) || // penetrating TOP edge
                             (dirFromCentre == 1 && yBottom > sideLocClosestFromCentre) ) // penetrating BOTTOM edge
-                            && (xLeft >= bump.coordinatesX[3] && xRight <= bump.coordinatesX[2]); // NEED TO MAKE THIS CONDITION MORE ACCURATE IN THE FUTURE
+                            && (xRight >= lT && xLeft <= hT);
     if(isPenetrating){
       particle.position.y = sideLocClosestFromCentre + dirOfResolution*particle.radius;
       particle.velocity.y *= -1;      
@@ -119,7 +121,7 @@ void collideWithBumps(Particle particle, Bump bump) {
   else{
     boolean isPenetrating = ( (dirFromCentre == -1 && xLeft < sideLocClosestFromCentre) || // penetrating LEFT edge
                             (dirFromCentre == 1 && xRight > sideLocClosestFromCentre) )   // penetrating RIGHT edge
-                            && (yTop >= bump.coordinatesY[1] && yBottom <= bump.coordinatesY[2]); // NEED TO MAKE THIS CONDITION MORE ACCURATE IN THE FUTURE
+                            && (yBottom >= lT && yTop <= hT);
     if(isPenetrating){
       particle.position.x = sideLocClosestFromCentre + dirOfResolution*particle.radius;
       particle.velocity.x *= -1;      

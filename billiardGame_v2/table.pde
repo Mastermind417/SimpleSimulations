@@ -79,10 +79,13 @@ class Bump {
   int[] coordinatesY;
 
   String name;
+  
   boolean horizontalBump;
   int directionFromCentre; 
   int locationClosestToCentre;
   
+  int lowestTip;
+  int highestTip;
 
   Bump(int nV, int[] cordsX, int[] cordsY) {
     vertices = nV; // nV
@@ -93,6 +96,7 @@ class Bump {
 
     allocateQuantitiesNeededForCollisionResolution();
     findSideClosestToBilliardCentre();
+    findExtremePoints();
   }
 
   void drawVertices() {
@@ -116,19 +120,18 @@ class Bump {
     // allocate direction from centre, -1 for left, 1 for right or -1 for up, 1 for down according to bump type
     if(horizontalBump) {
       directionFromCentre = -1;
-      if (coordinatesY[0] > height/2) directionFromCentre = 1;;
+      if (coordinatesY[0] > height/2) directionFromCentre = 1;
     }
     else{
       directionFromCentre = -1;
-      if (coordinatesX[0] > width/2) directionFromCentre = 1;;
-      
+      if (coordinatesX[0] > width/2) directionFromCentre = 1;      
     }
   }
 
   void findSideClosestToBilliardCentre() {
     /*
     Finds side location closest to centre needed for collision resolution.
-     */
+    */
 
     int flip = -directionFromCentre;
 
@@ -136,8 +139,8 @@ class Bump {
       // this should look at y-locations
       locationClosestToCentre = coordinatesY[0];
       for (int i = 1; i<vertices; i++) {
-        int locY = coordinatesY[i];
-        
+        int locY = coordinatesY[i];       
+        // the flip acts like reversing the greater operator
         if ( flip*locY > flip*locationClosestToCentre) locationClosestToCentre = locY;
       }
     } 
@@ -146,8 +149,28 @@ class Bump {
       locationClosestToCentre = coordinatesX[0];
         for (int i = 1; i<vertices; i++) {
           int locX = coordinatesX[i];
+          // the flip acts like reversing the greater operator
           if ( flip*locX > flip*locationClosestToCentre) locationClosestToCentre = locX;
         }
+    }
+  }
+  
+  void findExtremePoints(){
+    int[] coords = coordinatesX;
+    int[] otherCoords = coordinatesY;
+    if(!horizontalBump) {
+      coords = coordinatesY;
+      otherCoords = coordinatesX;
+    }
+    
+    lowestTip = width + 1; // i.e. a very large number
+    highestTip = 0;
+    for(int i = 0; i < vertices; i++){
+      if(otherCoords[i] == locationClosestToCentre){
+        int currentLoc = coords[i];
+        if(currentLoc > highestTip) highestTip = currentLoc;
+        if(currentLoc < lowestTip) lowestTip = currentLoc;
+      }
     }
   }
 }
@@ -189,7 +212,7 @@ class Bump {
   void createBumps() {
     bumps = new ArrayList<Bump>();
 
-    int lG = 20; // large gap
+    int lG = 27; // large gap
     int sG = 5; // small gap
     int bumpW = 25; // bump width
 
@@ -269,4 +292,10 @@ class Bump {
       }
     }
     return whiteBall;
+  }
+  
+  void positionWhiteBall(int posX, int posY){
+    Particle whiteBall = findWhiteBall();
+    whiteBall.setPosition(new PVector(posX, posY));
+    whiteBall.setVelocity(new PVector(0, 0));
   }

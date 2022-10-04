@@ -30,7 +30,7 @@ class Particle{
     
     force = new PVector(0,0);
     boundary = new PVector(bx, by);
-    maxVel = new PVector(0.001,0.001);
+    maxVel = new PVector(0.001, 0.001);
     minVel = new PVector(0.001, 0.001);
     name = "Particle" + particles.size();
     
@@ -44,6 +44,9 @@ class Particle{
    
   }
   
+  void setPosition(PVector newPosition){
+    position = newPosition;
+  }
   
   void setVelocity(PVector newVelocity){
     velocity = newVelocity;
@@ -64,8 +67,11 @@ class Particle{
     velocity.mult(dampening);
     position.add(velocity);
     
-    // record maximum velocity
+    // record extreme velocity
     recordExtremeVelocity();
+    
+    // clear velocity if velocity is too low
+    clearLowSpeed();
     
     // clear total force at the end
     force.mult(0);
@@ -140,6 +146,17 @@ class Particle{
     if(velocity.y < minVel.y){
       minVel.y = velocity.y;
     }
+  }
+  
+  void clearLowSpeed(){
+    /*
+    This is to make the balls slow quicker so that they don't seem to 'jiggle'.
+    */
+    
+    //if(colour[0] == 255 && colour[0] == 255 && colour[0] == 255) println(velocity.mag());
+    
+    float lowSpeedThreshold = 0.5;
+    if(velocity.mag() <= lowSpeedThreshold) velocity.mult(0);
   }
   
   void killParticle(){

@@ -7,12 +7,14 @@ PVector oldMouse = new PVector(0,0,0);
 PVector newMouse = new PVector(0,0,0);
 
 boolean whiteBallFound = false;
+boolean billiardHasSlowed = false;
 
 void settings(){
   size(w,h);
+  
 }
 
-void setup(){
+void setup(){  
   particles = new ArrayList<Particle>(); 
     
   oldMouse = new PVector(0,0,0);
@@ -26,7 +28,6 @@ void setup(){
 }
 
 void mousePressed(){
-  
   oldMouse = new PVector(mouseX, mouseY);
   
   whiteBallFound = whiteBallFound(oldMouse);
@@ -51,9 +52,23 @@ void mouseReleased(){
 }
 
 void keyPressed(){
-    if (keyCode == 82){ // 'reset'. when 'r' is pressed particles disappear and time is set back to 0
+  if (keyCode == 82){ // 'reset'. when 'r' is pressed particles disappear and time is set back to 0
     setup();
   }
+  
+  if(key == 'p'){ // 'p', p for position ball
+    positionWhiteBall(mouseX, mouseY);    
+  }
+  
+  if(key == 's'){ // 's', s for slow
+    if(!billiardHasSlowed) {
+      frameRate(5);
+    }
+    else{
+      frameRate(60);
+    }
+    billiardHasSlowed = !billiardHasSlowed;
+  }  
 }
 
 

@@ -22,9 +22,11 @@ void collisionBetweenParticles(){
 
 }
 
-void collisionBetweenParticlesAndEdges(){
+void collisionBetweenParticlesAndBumps(){
   for(Particle p : particles){
-    collideWithEdges(p);
+    for(Bump b : bumps){
+      collideWithBumps(p, b);  
+    } 
   }
 }
 

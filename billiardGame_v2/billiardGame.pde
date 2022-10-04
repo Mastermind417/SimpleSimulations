@@ -71,8 +71,8 @@ void draw(){
   
   moveParticles();
   collisionBetweenParticles();
-  //collisionBetweenParticlesAndEdges();
-  //collisionBetweenParticlesAndHoles();
+  collisionBetweenParticlesAndBumps();
+  collisionBetweenParticlesAndHoles();
   
   // for shooting a billiard
   drawVelLine();

@@ -22,10 +22,19 @@ void collisionBetweenParticles(){
 
 }
 
+void collisionBetweenParticlesAndAngledPieces(){
+  println(angledPieces.size());
+  for(Particle p : particles){
+    for(AngledPiece aP : angledPieces){
+      collideWithAngledPiece(p, aP);  
+    } 
+  }  
+}
+
 void collisionBetweenParticlesAndBumps(){
   for(Particle p : particles){
     for(Bump b : bumps){
-      collideWithBumps(p, b);  
+      collideWithBump(p, b);  
     } 
   }
 }

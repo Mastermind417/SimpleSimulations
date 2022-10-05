@@ -86,6 +86,7 @@ void draw(){
   
   moveParticles();
   collisionBetweenParticles();
+  collisionBetweenParticlesAndAngledPieces();
   collisionBetweenParticlesAndBumps();
   collisionBetweenParticlesAndHoles();
   

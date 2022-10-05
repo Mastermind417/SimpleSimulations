@@ -86,11 +86,29 @@ void resolveCollision(Particle particle, Particle otherParticle) {
   otherParticle.velocity.add(v2y);
 }
 
-//void simulateHardContact(Particle particles, Particle otherParticle){
+void collideWithAngledPiece(Particle particle, AngledPiece angledPiece){
+  ArrayList<IntList> angledPoints = angledPiece.allPixels;
+  
+  float yTop = particle.position.y - particle.radius;
+  float yBottom = particle.position.y + particle.radius;
+  float xLeft = particle.position.x - particle.radius;
+  float xRight = particle.position.x + particle.radius;
+  
+  for(IntList point : angledPoints){
+    int x = point.get(0);
+    int y = point.get(1);
+    
+    if(x >= xLeft && x <= xRight && y <= yBottom && y >= yTop) {
+      //println("SUCCESS: " + particle.name + " " + angledPiece.name);
+      
+      // TODO
+      // write resolution algorithm
+      // ...
+    } 
+  }
+}
 
-//}
-
-void collideWithBumps(Particle particle, Bump bump) {
+void collideWithBump(Particle particle, Bump bump) {
   // linear collision detection, penetration resolution and contact resolution(bounces off the edge)
   
   float yTop = particle.position.y - particle.radius;

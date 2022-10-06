@@ -98,7 +98,7 @@ void drawAngledPieces() {
 }
 
 void initialiseBalls() {
-  int dist = 40;
+  int dist = diameterCONST;
   PVector rightMark = new PVector(3*width/4, height/2);
   PVector leftMark = new PVector(1*width/4, height/2);
 

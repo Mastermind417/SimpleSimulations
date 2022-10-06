@@ -102,21 +102,21 @@ void collideWithAngledPiece(Particle particle, AngledPiece angledPiece) {
     float y = point.get(1);
 
     if (x >= xLeft && x <= xRight && y <= yBottom && y >= yTop) {
-      logger.println("COLLISION (t = " + time + "): " + particle.name + "( " + particleX + " " + particleY + " ) " + angledPiece.name + "( " + x + " " + y + " ) " );
-      println("SUCCESS" + angledPiece.name);
+      // for debugging purposes
+      //particle.velocity.mult(0);
+      //particle.velocity.mult(-1);
       
-      // TODO
-      // write resolution algorithm
-      // ...
+      // COLLISION RESOLUTION
+      // move particle at 'start' of angled piece
+      //...
       
-      
-      particle.velocity.mult(-1);
-      //particle.velocity.x *= -1*angledPiece.grad.y;
-      //particle.velocity.y *= -1*angledPiece.grad.x;
-      
-      logger.println(angledPiece.gradient);
-      logger.println(" ");
-      logger.flush();
+      // reflect particle velocity along slope
+      // NEED TO REVIEW THIS
+      float vx_bef = particle.velocity.x;
+      float vy_bef = particle.velocity.y;
+      float vmag = particle.velocity.mag();
+      particle.velocity.x *= -angledPiece.grad.y / abs(angledPiece.grad.y) * vy_bef/vmag;
+      particle.velocity.y *= -angledPiece.grad.x / abs(angledPiece.grad.x) * vx_bef/vmag;
     }
   }
 }

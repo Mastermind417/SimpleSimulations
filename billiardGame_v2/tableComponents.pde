@@ -168,7 +168,7 @@ class AngledPiece {
   PVector unitGrad;
   String name;
 
-  int numPoints = 100;
+  int numPoints = 1000;
   ArrayList<FloatList> allPoints;
 
   AngledPiece(int bumpIndex, int vertexIndex1, int vertexIndex2) {
@@ -189,26 +189,18 @@ class AngledPiece {
 
   ArrayList<FloatList> findAllPoints() {
     ArrayList<FloatList> points = new ArrayList<FloatList>();
-
-    float minX = min(x1, x2);
-    float maxX = max(x1, x2);
-
-    float minY = min(y1, y2);
-    float maxY = max(y1, y2);
-
-    //println(name + " " + str(maxX-minX) + " " + str(maxY-minY));
     
-    //logger.println(name);
+    logger.println(name);
     // discretize line from (xMin,yMin) to (xMax,yMax)
-    float dx = (maxX-minX) / numPoints;
-    float dy = (maxY-minY) / numPoints;
+    float dx = (x2-x1) / float(numPoints);
+    float dy = (y2-y1) / float(numPoints);
+    
+    logger.println("( " + x1 + " , " + y1 + " ) ( " + x2 + " , " + y2 + " )");
     for(int i = 0; i <= numPoints; i++){
-      float x = minX + i*dx;
-      float y = minY + i*dy;
+      float x = x1 + i*dx;
+      float y = y1 + i*dy;
       points.add(new FloatList (x,y));
-      //logger.println(dx + " , " + dy);
-      //logger.println(i);
-      //logger.println(x + " , " + y);
+      logger.println(x + " , " + y);
     }
     
     logger.flush();

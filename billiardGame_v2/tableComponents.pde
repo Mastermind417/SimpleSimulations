@@ -52,6 +52,7 @@ class Hole {
   }
 
   void display() {
+    stroke(0);
     fill(0);
     circle(position.x, position.y, diameter);
   }
@@ -145,7 +146,7 @@ class Bump {
       otherCoords = coordinatesX;
     }
 
-    lowestTip = width + 1; // i.e. a very large number
+    lowestTip = width + 1; // i.e. a large number
     highestTip = 0;
     for (int i = 0; i < vertices; i++) {
       if (otherCoords[i] == locationClosestToCentre) {
@@ -162,9 +163,13 @@ class AngledPiece {
   int y1;
   int x2;
   int y2;
+  float gradient;
+  PVector grad;
+  PVector unitGrad;
   String name;
-  
-  ArrayList<IntList> allPixels;
+
+  int numPoints = 100;
+  ArrayList<FloatList> allPoints;
 
   AngledPiece(int bumpIndex, int vertexIndex1, int vertexIndex2) {
     Bump b = bumps.get(bumpIndex);
@@ -172,26 +177,67 @@ class AngledPiece {
     x2 = b.coordinatesX[vertexIndex2];
     y1 = b.coordinatesY[vertexIndex1];
     y2 = b.coordinatesY[vertexIndex2];
+    
+    findSlope();
+    
     name = "AngledPiece" + (angledPieces.size() + 1); // AnglePiece1, AnglePiece2, ... 
     
-    allPixels = findAllPixels();
+    allPoints = findAllPoints();
+    
+    //printVertices();
   }
 
-  ArrayList<IntList> findAllPixels() {
-    ArrayList<IntList> allPixels = new ArrayList<IntList>();
+  ArrayList<FloatList> findAllPoints() {
+    ArrayList<FloatList> points = new ArrayList<FloatList>();
 
-    int minX = int(min(x1, x2));
-    int maxX = int(max(x1, x2));
+    float minX = min(x1, x2);
+    float maxX = max(x1, x2);
 
-    int minY = int(min(y1, y2));
-    int maxY = int(max(y1, y2));
+    float minY = min(y1, y2);
+    float maxY = max(y1, y2);
 
-    for (int i = minX; i<= maxX; i++) {
-      for (int j = minY; j <= maxY; j++) {
-        allPixels.add(new IntList (i,j));
-      }
+    //println(name + " " + str(maxX-minX) + " " + str(maxY-minY));
+    
+    //logger.println(name);
+    // discretize line from (xMin,yMin) to (xMax,yMax)
+    float dx = (maxX-minX) / numPoints;
+    float dy = (maxY-minY) / numPoints;
+    for(int i = 0; i <= numPoints; i++){
+      float x = minX + i*dx;
+      float y = minY + i*dy;
+      points.add(new FloatList (x,y));
+      //logger.println(dx + " , " + dy);
+      //logger.println(i);
+      //logger.println(x + " , " + y);
     }
     
-    return allPixels;
+    logger.flush();
+    
+    return points;
+  }
+  
+  void findSlope(){
+    float dx = abs( x2-x1 );
+    float dy = abs( y2-y1 );
+    
+    gradient = dx/dy;
+    grad = new PVector(dx, dy);
+    unitGrad = grad.normalize();
+  }
+  
+  void display(){
+    //print("should draw");
+    //fill(219,42,42);
+    strokeWeight(2);
+    //stroke(219,42,42);
+    stroke(200);
+    line(x1,y1,x2,y2);
+  }
+  
+  void printVertices(){
+    println(name);
+    println(x1 + " , " + y1);
+    println(x2 + " , " + y2);
+    println(" ");
   }
 }

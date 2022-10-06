@@ -165,7 +165,7 @@ class AngledPiece {
   int y2;
   float gradient;
   PVector grad;
-  PVector unitGrad;
+  PVector tangent;
   String name;
 
   int numPoints = 1000;
@@ -214,7 +214,9 @@ class AngledPiece {
     
     gradient = dx/dy;
     grad = new PVector(dx, dy);
-    unitGrad = grad.normalize();
+    tangent = new PVector(1, -gradient);
+    tangent.mult(-1);
+    tangent.normalize();
   }
   
   void display(){

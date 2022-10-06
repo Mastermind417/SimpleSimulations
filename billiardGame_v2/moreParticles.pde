@@ -23,7 +23,6 @@ void collisionBetweenParticles(){
 }
 
 void collisionBetweenParticlesAndAngledPieces(){
-  println(angledPieces.size());
   for(Particle p : particles){
     for(AngledPiece aP : angledPieces){
       collideWithAngledPiece(p, aP);  

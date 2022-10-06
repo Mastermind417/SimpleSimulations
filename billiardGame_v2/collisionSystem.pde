@@ -86,31 +86,44 @@ void resolveCollision(Particle particle, Particle otherParticle) {
   otherParticle.velocity.add(v2y);
 }
 
-void collideWithAngledPiece(Particle particle, AngledPiece angledPiece){
-  ArrayList<IntList> angledPoints = angledPiece.allPixels;
-  
-  float yTop = particle.position.y - particle.radius;
-  float yBottom = particle.position.y + particle.radius;
-  float xLeft = particle.position.x - particle.radius;
-  float xRight = particle.position.x + particle.radius;
-  
-  for(IntList point : angledPoints){
-    int x = point.get(0);
-    int y = point.get(1);
-    
-    if(x >= xLeft && x <= xRight && y <= yBottom && y >= yTop) {
-      //println("SUCCESS: " + particle.name + " " + angledPiece.name);
+void collideWithAngledPiece(Particle particle, AngledPiece angledPiece) {
+  ArrayList<FloatList> angledPoints = angledPiece.allPoints;
+
+  float particleX = particle.position.x;
+  float particleY = particle.position.y;
+
+  float yTop = particleY - particle.radius;
+  float yBottom = particleY + particle.radius;
+  float xLeft = particleX - particle.radius;
+  float xRight = particleX + particle.radius;
+
+  for (FloatList point : angledPoints) {
+    float x = point.get(0);
+    float y = point.get(1);
+
+    if (x >= xLeft && x <= xRight && y <= yBottom && y >= yTop) {
+      logger.println("COLLISION (t = " + time + "): " + particle.name + "( " + particleX + " " + particleY + " ) " + angledPiece.name + "( " + x + " " + y + " ) " );
+      println("SUCCESS" + angledPiece.name);
       
       // TODO
       // write resolution algorithm
       // ...
-    } 
+      
+      
+      particle.velocity.mult(-1);
+      //particle.velocity.x *= -1*angledPiece.grad.y;
+      //particle.velocity.y *= -1*angledPiece.grad.x;
+      
+      logger.println(angledPiece.gradient);
+      logger.println(" ");
+      logger.flush();
+    }
   }
 }
 
 void collideWithBump(Particle particle, Bump bump) {
   // linear collision detection, penetration resolution and contact resolution(bounces off the edge)
-  
+
   float yTop = particle.position.y - particle.radius;
   float yBottom = particle.position.y + particle.radius;
   float xLeft = particle.position.x - particle.radius;
@@ -121,28 +134,28 @@ void collideWithBump(Particle particle, Bump bump) {
   int sideLocClosestFromCentre = bump.locationClosestToCentre;
   int lT = bump.lowestTip;
   int hT = bump.highestTip;
-    
+
   // horizontal edges
   if (bump.horizontalBump) {
     // top edges
 
     boolean isPenetrating = ( (dirFromCentre == -1 && yTop < sideLocClosestFromCentre) || // penetrating TOP edge
-                            (dirFromCentre == 1 && yBottom > sideLocClosestFromCentre) ) // penetrating BOTTOM edge
-                            && (xRight >= lT && xLeft <= hT);
-    if(isPenetrating){
+      (dirFromCentre == 1 && yBottom > sideLocClosestFromCentre) ) // penetrating BOTTOM edge
+      && (xRight >= lT && xLeft <= hT);
+    if (isPenetrating) {
       particle.position.y = sideLocClosestFromCentre + dirOfResolution*particle.radius;
-      particle.velocity.y *= -1;      
-    }    
+      particle.velocity.y *= -1;
+    }
   }
-  
+
   // vertical edges
-  else{
+  else {
     boolean isPenetrating = ( (dirFromCentre == -1 && xLeft < sideLocClosestFromCentre) || // penetrating LEFT edge
-                            (dirFromCentre == 1 && xRight > sideLocClosestFromCentre) )   // penetrating RIGHT edge
-                            && (yBottom >= lT && yTop <= hT);
-    if(isPenetrating){
+      (dirFromCentre == 1 && xRight > sideLocClosestFromCentre) )   // penetrating RIGHT edge
+      && (yBottom >= lT && yTop <= hT);
+    if (isPenetrating) {
       particle.position.x = sideLocClosestFromCentre + dirOfResolution*particle.radius;
-      particle.velocity.x *= -1;      
+      particle.velocity.x *= -1;
     }
   }
 }

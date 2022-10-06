@@ -108,15 +108,24 @@ void collideWithAngledPiece(Particle particle, AngledPiece angledPiece) {
       
       // COLLISION RESOLUTION
       // move particle at 'start' of angled piece
-      //...
+      // REVIEW THIS!
+      particle.position.set(x+particle.radius, y+particle.radius);
       
       // reflect particle velocity along slope
-      // NEED TO REVIEW THIS
-      float vx_bef = particle.velocity.x;
-      float vy_bef = particle.velocity.y;
-      float vmag = particle.velocity.mag();
-      particle.velocity.x *= -angledPiece.grad.y / abs(angledPiece.grad.y) * vy_bef/vmag;
-      particle.velocity.y *= -angledPiece.grad.x / abs(angledPiece.grad.x) * vx_bef/vmag;
+      // https://stackoverflow.com/questions/51310804/particle-bouncing-off-spherical-boundaries-3d
+      float vN = particle.velocity.dot(angledPiece.tangent);
+      if( vN > 0) vN *= -1;
+      PVector incr = new PVector();
+      PVector.mult(angledPiece.tangent, 2*vN, incr);
+      particle.velocity.add(incr);
+      break;
+      
+      // old 07 Oct 2022
+      //float vx_bef = particle.velocity.x;
+      //float vy_bef = particle.velocity.y;
+      //float vmag = particle.velocity.mag();
+      //particle.velocity.x *= -angledPiece.grad.y / abs(angledPiece.grad.y) * vy_bef/vmag;
+      //particle.velocity.y *= -angledPiece.grad.x / abs(angledPiece.grad.x) * vx_bef/vmag;
     }
   }
 }

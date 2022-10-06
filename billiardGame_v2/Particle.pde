@@ -1,5 +1,7 @@
 // class from particlesInABox
 
+int diameterCONST = 40;
+
 class Particle{
   PVector position;
   PVector velocity;
@@ -35,7 +37,7 @@ class Particle{
     name = "Particle" + particles.size();
     
     life = 10000;
-    diameter = 40;
+    diameter = diameterCONST;
     radius = diameter/2;
     mass = 100; // map(radius, 5,20,1,100); 
     

@@ -9,6 +9,9 @@ PVector newMouse = new PVector(0,0,0);
 boolean whiteBallFound = false;
 boolean billiardHasSlowed = false;
 
+int time;
+PrintWriter logger;
+
 void settings(){
   size(w,h);
   
@@ -16,6 +19,8 @@ void settings(){
 
 void setup(){  
   particles = new ArrayList<Particle>(); 
+  logger = createWriter("logger.txt");
+  time = 0; 
     
   oldMouse = new PVector(0,0,0);
   newMouse = new PVector(0,0,0);
@@ -82,6 +87,7 @@ void draw(){
   // table edges and holes
   drawEdges();
   drawBumps();
+  drawAngledPieces();
   drawHoles();
   
   moveParticles();
@@ -92,6 +98,9 @@ void draw(){
   
   // for shooting a billiard
   drawVelLine();
+  
+  showTime();
+  ++time;
 }
 
 void drawVelLine(){
@@ -100,4 +109,10 @@ void drawVelLine(){
     fill(128,128,128);
     line(oldMouse.x, oldMouse.y, newMouse.x, newMouse.y);
   }
+}
+
+void showTime(){
+  textSize(25);
+  text("Time: " + time, 5*width/6,height-15, 10);
+  
 }

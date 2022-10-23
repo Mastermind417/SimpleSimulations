@@ -1,6 +1,6 @@
 // class from particlesInABox
 
-int diameterCONST = 20;
+int diameterCONST = 30;
 
 class Particle{
   PVector position;

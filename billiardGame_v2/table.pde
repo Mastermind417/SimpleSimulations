@@ -60,7 +60,7 @@ void createBumps() {
 
   bumps.add(new Bump( 4, new int[] {hDLarge, width/2-hDSmall/2, width/2-hDSmall/2-sG, hDLarge+lG}, new int[] {hDLarge/2, hDLarge/2, hDLarge/2+bumpW, hDLarge/2+bumpW} ));
   angledPieces.add(new AngledPiece(0, 0, 3));
-  angledPieces.add(new AngledPiece(0, 1, 2));
+  angledPieces.add(new AngledPiece(0, 2, 1));
 
   bumps.add(new Bump( 4, new int[] {width/2+hDSmall/2, width-hDLarge, width-hDLarge-lG, width/2+hDSmall/2+sG}, new int[] {hDLarge/2, hDLarge/2, hDLarge/2+bumpW, hDLarge/2+bumpW} ));
   angledPieces.add(new AngledPiece(1, 0, 3));
@@ -93,7 +93,21 @@ void drawBumps() {
 void drawAngledPieces() {
   if (angledPieces == null || angledPieces.size() == 0) return;
   for (AngledPiece ap : angledPieces) {
-    ap.display();
+    
+    // this displays the slope pixels that are manually found needed for the collision resolution
+    for(FloatList p : ap.allPoints){
+      // find x and y pixel coordinate
+      float x = p.get(0);
+      float y = p.get(1);
+            
+      // draw it on screen
+      stroke(237,26,26); // red colour
+      strokeWeight(1);
+      point(x,y);
+ 
+    }
+    
+    //ap.display();
   }
 }
 

@@ -172,6 +172,8 @@ class AngledPiece {
   ArrayList<FloatList> allPoints;
 
   AngledPiece(int bumpIndex, int vertexIndex1, int vertexIndex2) {
+    name = "AngledPiece" + (angledPieces.size() + 1); // AnglePiece1, AnglePiece2, ...
+    
     Bump b = bumps.get(bumpIndex);
     x1 = b.coordinatesX[vertexIndex1];
     x2 = b.coordinatesX[vertexIndex2];
@@ -179,9 +181,6 @@ class AngledPiece {
     y2 = b.coordinatesY[vertexIndex2];
     
     findSlope();
-    
-    name = "AngledPiece" + (angledPieces.size() + 1); // AnglePiece1, AnglePiece2, ... 
-    
     allPoints = findAllPoints();
     
     //printVertices();
@@ -214,9 +213,13 @@ class AngledPiece {
     
     gradient = dx/dy;
     grad = new PVector(dx, dy);
+    
+    // need to adjust tangent vector to points 'inwards', i.e. towards pool table
     tangent = new PVector(1, -gradient);
     tangent.mult(-1);
     tangent.normalize();
+    
+    println(name + " " + gradient + " " + tangent);
   }
   
   void display(){

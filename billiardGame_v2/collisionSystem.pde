@@ -103,22 +103,30 @@ void collideWithAngledPiece(Particle particle, AngledPiece angledPiece) {
 
     if (x >= xLeft && x <= xRight && y <= yBottom && y >= yTop) {
       // for debugging purposes
-      particle.velocity.mult(0);
+      logger.println(angledPiece.name);
+      logger.println("velocity BEFORE: " + particle.velocity);
+      logger.println("tanget: " + angledPiece.tangent);
+      
+      //particle.velocity.mult(0);
       //particle.velocity.mult(-1);
       
       // COLLISION RESOLUTION
       // move particle at 'start' of angled piece
       // REVIEW THIS!
-      particle.position.set(x+particle.radius, y+particle.radius);
+      //particle.position.set(x+particle.radius, y+particle.radius);
       
       // reflect particle velocity along slope
       // https://stackoverflow.com/questions/51310804/particle-bouncing-off-spherical-boundaries-3d
       float vN = particle.velocity.dot(angledPiece.tangent);
-      //print(vN);
-      if( vN > 0) vN *= -1;
+      vN *= -1; //<>//
       PVector incr = new PVector();
       PVector.mult(angledPiece.tangent, 2*vN, incr);
       particle.velocity.add(incr);
+      
+      logger.println("velocity AFTER: " + particle.velocity);
+      logger.println();
+      logger.flush();
+      
       break;
       
       // old 07 Oct 2022

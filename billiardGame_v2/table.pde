@@ -64,19 +64,19 @@ void createBumps() {
 
   bumps.add(new Bump( 4, new int[] {width/2+hDSmall/2, width-hDLarge, width-hDLarge-lG, width/2+hDSmall/2+sG}, new int[] {hDLarge/2, hDLarge/2, hDLarge/2+bumpW, hDLarge/2+bumpW} ));
   angledPieces.add(new AngledPiece(1, 0, 3));
-  angledPieces.add(new AngledPiece(1, 1, 2));
+  angledPieces.add(new AngledPiece(1, 2, 1));
 
   bumps.add(new Bump( 4, new int[] {hDLarge/2, hDLarge/2+bumpW, hDLarge/2+bumpW, hDLarge/2}, new int[] {hDLarge, hDLarge+lG, height-(hDLarge+lG), height-hDLarge} ));
   angledPieces.add(new AngledPiece(2, 0, 1));
-  angledPieces.add(new AngledPiece(2, 2, 3));
+  angledPieces.add(new AngledPiece(2, 3, 2));
 
   bumps.add(new Bump( 4, new int[] {width-hDLarge/2, width-(hDLarge/2+bumpW), width-(hDLarge/2+bumpW), width-hDLarge/2}, new int[] {hDLarge, hDLarge+lG, height-(hDLarge+lG), height-hDLarge} ));
-  angledPieces.add(new AngledPiece(3, 0, 1));
+  angledPieces.add(new AngledPiece(3, 1, 0));
   angledPieces.add(new AngledPiece(3, 2, 3));
 
   bumps.add(new Bump( 4, new int[] {hDLarge, width/2-hDSmall/2, width/2-hDSmall/2-sG, hDLarge+lG}, new int[] {height-hDLarge/2, height-hDLarge/2, height-(hDLarge/2+bumpW), height-(hDLarge/2+bumpW)} ));
   angledPieces.add(new AngledPiece(4, 0, 3));
-  angledPieces.add(new AngledPiece(4, 1, 2));
+  angledPieces.add(new AngledPiece(4, 2, 1));
 
   bumps.add(new Bump( 4, new int[] {width/2+hDSmall/2, width-hDLarge, width-hDLarge-lG, width/2+hDSmall/2+sG}, new int[] {height-hDLarge/2, height-hDLarge/2, height-(hDLarge/2+bumpW), height-(hDLarge/2+bumpW)} ));
   angledPieces.add(new AngledPiece(5, 0, 3));

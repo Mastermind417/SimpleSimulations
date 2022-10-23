@@ -208,8 +208,8 @@ class AngledPiece {
   }
   
   void findSlope(){
-    float dx = abs( x2-x1 );
-    float dy = abs( y2-y1 );
+    float dx = x2-x1;
+    float dy = y2-y1;
     
     gradient = dx/dy;
     grad = new PVector(dx, dy);

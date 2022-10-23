@@ -172,7 +172,7 @@ class AngledPiece {
   ArrayList<FloatList> allPoints;
 
   AngledPiece(int bumpIndex, int vertexIndex1, int vertexIndex2) {
-    name = "AngledPiece" + (angledPieces.size() + 1); // AnglePiece1, AnglePiece2, ...
+    name = "AngledPiece" + str((angledPieces.size() + 1)); // AnglePiece1, AnglePiece2, ...
     
     Bump b = bumps.get(bumpIndex);
     x1 = b.coordinatesX[vertexIndex1];
@@ -189,20 +189,15 @@ class AngledPiece {
   ArrayList<FloatList> findAllPoints() {
     ArrayList<FloatList> points = new ArrayList<FloatList>();
     
-    logger.println(name);
     // discretize line from (xMin,yMin) to (xMax,yMax)
     float dx = (x2-x1) / float(numPoints);
     float dy = (y2-y1) / float(numPoints);
     
-    logger.println("( " + x1 + " , " + y1 + " ) ( " + x2 + " , " + y2 + " )");
     for(int i = 0; i <= numPoints; i++){
       float x = x1 + i*dx;
       float y = y1 + i*dy;
       points.add(new FloatList (x,y));
-      logger.println(x + " , " + y);
     }
-    
-    logger.flush();
     
     return points;
   }
@@ -215,11 +210,28 @@ class AngledPiece {
     grad = new PVector(dx, dy);
     
     // need to adjust tangent vector to points 'inwards', i.e. towards pool table
-    tangent = new PVector(1, -gradient);
-    tangent.mult(-1);
+    tangent = new PVector(-1, gradient);
+    if(gradient < 0){
+      tangent.mult(-1);
+    }
+    
+    correctWrongTangent();
+    
     tangent.normalize();
     
-    println(name + " " + gradient + " " + tangent);
+    //println(name + " " + gradient + " " + tangent);
+    //println(tangent.x / abs(tangent.x));
+    //println(tangent.y / abs(tangent.y));
+    
+  }
+  
+  void correctWrongTangent(){
+    // these are angled pieces 5,7,9,10,11,12
+    int countTag = angledPieces.size() + 1;
+    if(countTag == 5 || countTag == 7 || countTag == 9 || countTag == 10 || countTag == 11 || countTag == 12){
+      //println("CHANGED " + nppame);
+      tangent.mult(-1);
+    }
   }
   
   void display(){

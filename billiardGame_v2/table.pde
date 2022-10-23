@@ -32,6 +32,28 @@ void drawEdges() {
   }
 }
 
+void drawPiecesBehindHoles() {
+  noStroke();
+  fill(152,147,147);
+  
+  rect(0,0,hDLarge, hDLarge/2);
+  rect(0,0,hDLarge/2, hDLarge);
+  
+  rect(width-hDLarge, 0, hDLarge, hDLarge/2);
+  rect(width-hDLarge/2, 0, hDLarge/2, hDLarge);
+  
+  rect(0,height-hDLarge/2, hDLarge, hDLarge/2);
+  rect(0,height-hDLarge, hDLarge/2, hDLarge);
+  
+  rect(width-hDLarge,height-hDLarge/2, hDLarge, hDLarge/2);
+  rect(width-hDLarge/2,height-hDLarge, hDLarge/2, hDLarge);
+  
+  
+
+  
+  
+}
+
 void createHoles() {
   holes = new ArrayList<Hole>();
 
@@ -94,20 +116,21 @@ void drawAngledPieces() {
   if (angledPieces == null || angledPieces.size() == 0) return;
   for (AngledPiece ap : angledPieces) {
     
-    // this displays the slope pixels that are manually found needed for the collision resolution
-    for(FloatList p : ap.allPoints){
-      // find x and y pixel coordinate
-      float x = p.get(0);
-      float y = p.get(1);
+    // this displays the slope pixels that are manually used for the collision resolution
+    //for(FloatList p : ap.allPoints){
+    //  // find x and y pixel coordinate
+    //  float x = p.get(0);
+    //  float y = p.get(1);
             
-      // draw it on screen
-      stroke(237,26,26); // red colour
-      strokeWeight(1);
-      point(x,y);
+    //  // draw it on screen
+    //  stroke(237,26,26); // red colour
+    //  strokeWeight(1);
+    //  point(x,y);
  
-    }
+    //}
     
-    //ap.display();
+    // this displays the angledPiece slope as a line
+    ap.display();
   }
 }
 

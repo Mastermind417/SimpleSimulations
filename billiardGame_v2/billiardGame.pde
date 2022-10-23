@@ -14,7 +14,6 @@ PrintWriter logger;
 
 void settings(){
   size(w,h);
-  
 }
 
 void setup(){  
@@ -88,6 +87,7 @@ void draw(){
   drawEdges();
   drawBumps();
   drawAngledPieces();
+  drawPiecesBehindHoles();
   drawHoles();
   
   moveParticles();

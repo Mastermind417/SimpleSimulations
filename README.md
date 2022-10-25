@@ -1,5 +1,10 @@
 # SimpleSimulations
 
+## billiardGame_v2
+This is an improved version for the billiard game. 
+
+![](images/billiardGame_v2_InitialPosition.png)
+
 ## billiardGame
 This is a two-dimensional simulation of the billiard game. 
 
